@@ -3,8 +3,14 @@ color: white !important;
 }
 
 
-#pagina.transparent{
-  background:rgba(255,255,255,0.5);
+.transparentContent{
+  background:rgba(110,110,110,0.4);
+  padding: 30px 0 30px 30px;
+}
+
+.darkerTransparentContent{
+  background:rgba(25,25,25,0.4);
+  padding: 30px 0 30px 30px;
 }
 
 div.hr {
@@ -67,7 +73,7 @@ li a:hover {
 .footer, .push {
 height: 4em;
 color: white;
-width: 700px;
+width: 900px;
 text-align:left;
 margin: 0 auto 0 auto;
 }
@@ -83,10 +89,20 @@ footer {
 }
 */
 
+hr.styling {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.40), rgba(174, 255, 178, 0.75), rgba(0, 0, 0, 0.40));
+	}
+	
 .derecha
 {
  float:right;
- padding-right:15%;
+ padding-right:25%;
+}
+
+.right-line {
+  border-right: 1px dashed #EEE;
 }
 
 
