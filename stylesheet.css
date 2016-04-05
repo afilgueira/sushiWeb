@@ -2,10 +2,6 @@ h1 ,h2,h3{
 color: white !important; 
 }
 
-span{
-float: right ; 
-margin-right: 15%
-}
 
 #pagina.transparent{
   background:rgba(255,255,255,0.5);
@@ -63,14 +59,17 @@ li a:hover {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin:15px 15% -4em 25%
+	margin: 0 auto -4em auto;
+	width: 900px;
+	
 }
 
 .footer, .push {
 height: 4em;
 color: white;
-width: 40%;
-margin-left:30%;
+width: 700px;
+text-align:left;
+margin: 0 auto 0 auto;
 }
 /*
 footer {
@@ -84,9 +83,15 @@ footer {
 }
 */
 
+.derecha
+{
+ float:right;
+ padding-right:15%;
+}
+
 
 #desc{
-float: left;
+float:left;
 color: white;
 }
 
@@ -95,21 +100,38 @@ float: left;
 color: rgb(174, 255, 178);
 }
 
+#desc3{
+text-align:left;
+padding-right:40%;
+color: white;
+}
+
+#descAbajo2{
+text-align:left;
+color: white;
+}
+
+#descAbajo1{
+text-align:left;
+color: rgb(174, 255, 178);
+}
+
 #precio
 {
-padding-left:75%;
+text-align:right;
 color: white;
 }
 
 #precio2
 {
-padding-left:85%;
+padding-right:16%;
+text-align:right;
 color: white;
 }
 
 #precio3
 {
-padding-left:79%;
+padding-right:left%;
 color: white;
 }
 
