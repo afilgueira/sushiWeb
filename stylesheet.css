@@ -1,0 +1,120 @@
+h1 ,h2,h3{
+color: white !important; 
+}
+
+span{
+float: right ; 
+margin-right: 15%
+}
+
+#pagina.transparent{
+  background:rgba(255,255,255,0.5);
+}
+
+div.hr {
+width: 100%;
+background: #fff  no-repeat scroll center;
+
+}
+
+div.hr hr {
+display: none;
+
+}
+
+ul {
+	height:10px
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%; 
+	/* position: fixed -> tiene pocas páginas y no vale la pena perder pantalla para algo que probablemente no se use (pasar de menu a Sushi San)*/
+	
+}
+
+li {
+    float: left;
+}
+
+body { 
+  background: url(backgroundimg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin:15px 15% -4em 25%
+}
+
+.footer, .push {
+height: 4em;
+color: white;
+width: 40%;
+margin-left:30%;
+}
+/*
+footer {
+	
+	position:absolute;
+	bottom:0;
+	color: white;
+	width: 40%;
+	margin-left:30%;
+	display: block;
+}
+*/
+
+
+#desc{
+float: left;
+color: white;
+}
+
+#desc2{
+float: left;
+color: rgb(174, 255, 178);
+}
+
+#precio
+{
+padding-left:75%;
+color: white;
+}
+
+#precio2
+{
+padding-left:85%;
+color: white;
+}
+
+#precio3
+{
+padding-left:79%;
+color: white;
+}
+
+
+div.menu{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    column-count: 3;
+}
