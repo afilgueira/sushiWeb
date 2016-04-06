@@ -2,6 +2,8 @@ h1 ,h2,h3{
 color: white !important; 
 }
 
+h3{font-size:20px !important; 
+}
 
 .transparentContent{
   background:rgba(110,110,110,0.4);
@@ -59,18 +61,27 @@ li a {
 
 li a:hover {
     background-color: #111;
+	color: rgb(174, 255, 178);
 }
 
 .wrapper {
 	min-height: 100%;
-	height: auto !important;
 	height: 100%;
 	margin: 0 auto -4em auto;
 	width: 900px;
+}
+
+.wrapperFullPage {
+	margin: 0 auto -4em auto;
+	width: 900px;
+	height:980px;
 	
 }
 
 .footer, .push {
+
+position:relative;
+bottom:0;
 height: 4em;
 color: white;
 width: 900px;
@@ -88,6 +99,7 @@ footer {
 	display: block;
 }
 */
+
 
 hr.styling {
     border: 0;
@@ -118,7 +130,7 @@ color: rgb(174, 255, 178);
 
 #desc3{
 text-align:left;
-padding-right:40%;
+padding-right:30%;
 color: white;
 }
 

@@ -10,6 +10,17 @@
 <meta name="keywords" content="Sushi,Sushi San,Nagiri,Unagi">
 <meta name="author" content="lucho">
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+</style>
 
 <title> Sushi San </title>
 
@@ -27,37 +38,32 @@
 
 
 
+<div class="wrapper">
 <div id="content">
 
-<div class="wrapper" style="margin:15px 15% 0px 25% ; background-color: grey transparent">
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:550px; width:100%">
  
  <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="unagi2.jpg"  alt="Unagi">
+      <img src="sushi2.jpg"  alt="Sushi" style="height:550px; width:100%" >
     </div>
 
     <div class="item">
-      <img src="unagi.jpg" alt="Chania">
+      <img src="sushi.jpg" alt="Sushi" style="height:550px; width:100%">
     </div>
 
     <div class="item">
-      <img src="img_flower.jpg" alt="Flower">
+      <img src="unagi.jpg" alt="Ross" style="height:550px; width:100%">
     </div>
 
-    <div class="item">
-      <img src="img_flower2.jpg" alt="Flower">
-    </div>
   </div>
 
   <!-- Left and right controls -->
@@ -76,22 +82,24 @@
 <div class="push"></div>
 
 
-<div class="footer" id ="footer" >
-
+<<div class="footer" id ="footer" >
+<div class="darkerTransparentContent">
 <div class="row">
 <div class="col-sm-4">
+<div class="right-line">
   
   <h3>Horarios</h3>
  
 <p>
-Mon:    <span>11:00am - 11:00pm</span><br>
-Tue:   	<span>11:00am - 11:00pm</span><br>
-Wed:    <span>11:00am - 11:00pm</span><br>
-Thurs:  <span>11:00am - 11:00pm</span><br>
-Fri:    <span>11:00am - 11:00pm</span><br>
+Mon:    <span class="derecha">11:00am - 11:00pm</span><br>
+Tue:   	<span class="derecha">11:00am - 11:00pm</span><br>
+Wed:    <span class="derecha">11:00am - 11:00pm</span><br>
+Thurs:  <span class="derecha">11:00am - 11:00pm</span><br>
+Fri:    <span class="derecha">11:00am - 11:00pm</span><br>
 </div>
-
+</div>
 <div class="col-sm-4">
+<div class="right-line">
 <h3>Contacto</h3>
  
 <p>
@@ -103,7 +111,7 @@ F: 123-456-7890<br>
 </p>
 
 </div>
-
+</div>
 
 <div class="col-sm-4">
 <h3>Pedidos</h3>
@@ -112,7 +120,7 @@ F: 123-456-7890<br>
 Lunch:  11:00am -  4:30pm<br>
 Dinner:  4:30pm - 10:30pm<br>
 ​<br>
-Happy Hour: <br>
+<b>Happy Hour:</b> <br>
 Mon-Wed  3:00pm -  7:00pm<br>
 </p>
 
@@ -121,8 +129,10 @@ Mon-Wed  3:00pm -  7:00pm<br>
 
 </div> <!-- Row div -->
 
-<br> <br>
+
 </div>
+</div>
+<br> <br> 
 
 </body>
 </html>
