@@ -13,6 +13,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/_catalogs/masterpage/UHN/js/bootstrap.min.js"></script>
+<script>
+     $(function () {
+        $('.carousel').carousel({ interval:4000 });  
+
+        $('#playButton').click(function () {
+            $('#homeCarousel').carousel('cycle');
+        });
+        $('#pauseButton').click(function () {
+            $('#homeCarousel').carousel('pause');
+        });
+    });
+
+</script>
+
 
 <style>
   .carousel-inner > .item > img,
@@ -39,21 +54,29 @@
 
 
 <div class="wrapper">
-<div id="content">
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:550px; width:100%">
+
+	 
+        
+    
+	  
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
  
  <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-slide-to="0" class="active"></li>
+    <li data-slide-to="1"></li>
+    <li data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
+  
     <div class="item active">
       <img src="sushi2.jpg"  alt="Sushi" style="height:550px; width:100%" >
+		<div class="carousel-caption">
+			<p>Beatiful flowers in Kolymbari, Crete.</p>
+		</div>
     </div>
 
     <div class="item">
@@ -62,9 +85,23 @@
 
     <div class="item">
       <img src="unagi.jpg" alt="Ross" style="height:550px; width:100%">
+	  <div class="carousel-caption">
+        <p>Beatiful flowers in Kolymbari, Crete.</p>
+      </div>
     </div>
+	
+	<div id="carouselButtons" style = "float:right">
+    <button id="playButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-play"></span>
+     </button>
+    <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-pause" ></span>
+    </button>
+	</div>
 
   </div>
+  
+   
 
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -75,15 +112,21 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  
+ 
+  
 </div>
  
-</div>
-</div>
+</div>   
+ 
+
+
 <div class="push"></div>
 
-
-<<div class="footer" id ="footer" >
+<br> <br>
+<div class="footer" id ="footer" >
 <div class="darkerTransparentContent">
+<div class="centrar-footer">
 <div class="row">
 <div class="col-sm-4">
 <div class="right-line">
@@ -133,6 +176,7 @@ Mon-Wed  3:00pm -  7:00pm<br>
 </div>
 </div>
 <br> <br> 
-
+</div>
+</div>
 </body>
 </html>

@@ -7,7 +7,7 @@ h3{font-size:20px !important;
 
 .transparentContent{
   background:rgba(110,110,110,0.4);
-  padding: 30px 0 30px 30px;
+  padding: 3% 0 3% 6%;
 }
 
 .darkerTransparentContent{
@@ -71,12 +71,6 @@ li a:hover {
 	width: 900px;
 }
 
-.wrapperFullPage {
-	margin: 0 auto -4em auto;
-	width: 900px;
-	height:980px;
-	
-}
 
 .footer, .push {
 
@@ -88,20 +82,41 @@ width: 900px;
 text-align:left;
 margin: 0 auto 0 auto;
 }
-/*
-footer {
-	
-	position:absolute;
-	bottom:0;
-	color: white;
-	width: 40%;
-	margin-left:30%;
-	display: block;
+
+.centrar-footer{
+margin: 0 auto 0 8%;
+width: 800px;
 }
-*/
+
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  }
+
+  /* FLECHAS DEL CAROUSEL SIN FONDO GRADIENTE*/
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+}
 
 
-hr.styling {
+.carousel-caption{
+
+ margin:0 auto;
+ margin-top: 200px; 
+ text-align:right;
+}
+
+
+hr.larga {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.40), rgba(174, 255, 178, 0.75), rgba(0, 0, 0, 0.40));
+	margin: 0 7% 0 0;
+	}
+	
+hr.corta{
     border: 0;
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.40), rgba(174, 255, 178, 0.75), rgba(0, 0, 0, 0.40));
