@@ -98,10 +98,22 @@ color: rgb(114, 195, 118);
 .wrapper {
 	min-height: 100% !important;
 	height: 100%;
-	margin: -10px auto -4em auto;
+	margin: -10px auto -4em auto !important;
 	width: 1000px;
 }
 
+.header-carousel{
+position:relative; 
+top: 300px; 
+z-index:12; 
+font: normal normal normal 50px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ; 
+float:right; 
+text-align:right; 
+padding:10px 20px 10px 100px; 
+color:white;
+background: rgba(85, 85, 85, 0.85);
+
+}
 
 .footer, .push {
 
