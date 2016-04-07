@@ -121,21 +121,6 @@
     </button>
  </div>  
 
-
- <script>
-	$(function () {
-		var totalItems = $('.item').length;
-		var currentIndex = $('div.active').index() + 1;
-		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');
-
-
-		$('#myCarousel').bind(('slid'), function() {
-		currentIndex = $('div.active').index() + 1;
-		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');
-		});
-
-	});
-</script>
  <!-- <p id="photo-frame" class="photo-number" > Best sushi in town </p>-->
  <div class="numero-slide"> </div> 
 
