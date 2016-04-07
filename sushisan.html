@@ -21,9 +21,9 @@
 
 
 
-	$(function () {
+	
 	 
-	 
+	 $(function () {	
 		var totalItems = $('.item').length;
 		var currentIndex = $('div.active').index() + 1;
 		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');	
@@ -32,11 +32,12 @@
 		currentIndex = $('div.active').index() + 1;
 		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');
 		});
-		
+	});	
 		
 		
 		$('.carousel').carousel({ interval:4000 });  
 		
+	$(function () {	
         $('#playButton').click(function () {
             $('#myCarousel').carousel('cycle');
 			document.getElementById("playButton").style.visibility = "hidden";
