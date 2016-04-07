@@ -28,13 +28,14 @@
 		var currentIndex = $('div.active').index() + 1;
 		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');	
  		
-        $('.carousel').carousel({ interval:4000 });  
-		
 		$('#myCarousel').bind('slid', function() {
 		currentIndex = $('div.active').index() + 1;
 		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');
 		});
 		
+		
+		
+		$('.carousel').carousel({ interval:4000 });  
 		
         $('#playButton').click(function () {
             $('#myCarousel').carousel('cycle');
