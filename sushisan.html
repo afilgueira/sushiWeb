@@ -5,6 +5,8 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="stylesheet.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css");
 <!--meta-->
 <meta name="description" content="Sushi selling">
 <meta name="keywords" content="Sushi,Sushi San,Nagiri,Unagi">
@@ -21,8 +23,19 @@
 
 	$(function () {
 	 
-			
+	 
+		var totalItems = $('.item').length;
+		var currentIndex = $('div.active').index() + 1;
+		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');	
+ 		
         $('.carousel').carousel({ interval:4000 });  
+		
+		$('#myCarousel').bind('slid', function() {
+		currentIndex = $('div.active').index() + 1;
+		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');
+		});
+		
+		
         $('#playButton').click(function () {
             $('#myCarousel').carousel('cycle');
 			document.getElementById("playButton").style.visibility = "hidden";
@@ -96,6 +109,8 @@
 
 <!--CAROUSER-HEADER-->
 <h3 class="header-carousel" > Best sushi in town </h3>
+
+<img src="logo-noback.png" style="position:absolute;top:-60px; left:-60px">
 
 <div id="carouselButtons" >
     <button id="playButton" style="visibility:hidden" type="button" class="btn btn-default btn-xs">
