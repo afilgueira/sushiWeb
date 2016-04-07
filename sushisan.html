@@ -16,18 +16,27 @@
 <!--CAROUSEL SCRIPT-->
 <script src="/_catalogs/masterpage/UHN/js/bootstrap.min.js"></script>
 <script>
-     $(function () {
-        $('.carousel').carousel({ interval:4000 });  
 
+
+
+	$(function () {
+	 
+			
+        $('.carousel').carousel({ interval:4000 });  
         $('#playButton').click(function () {
-            $('#homeCarousel').carousel('cycle');
+            $('#myCarousel').carousel('cycle');
+			document.getElementById("playButton").style.visibility = "hidden";
+			document.getElementById("pauseButton").style.visibility = "visible";
         });
         $('#pauseButton').click(function () {
-            $('#homeCarousel').carousel('pause');
+            $('#myCarousel').carousel('pause');
+			document.getElementById("pauseButton").style.visibility = "hidden";
+			document.getElementById("playButton").style.visibility = "visible";
         });
     });
-
 </script>
+
+
 <!--CAROUSEL SCRIPT-->
 
 
@@ -50,18 +59,11 @@
 <div class="wrapper">
 
 
-
-<div class="container-carousel" style="position:absolute; height:550px ;width:1000px">
-
-<!--CAROUSER-HEADER-->
-
-<h3 class="header-carousel" > Best sushi in town </h3>
-
-</div>
-
  
  <!--CAROUSEL-->
 <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+
+
  <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-slide-to="0" class="active"></li>
@@ -82,19 +84,48 @@
     </div>
 
     <div class="item">
-      <img src="unagi.jpg" alt="Ross" style="height:550px; width:100%">
+      <img src="sushi4.jpg" alt="Sushi" style="height:550px; width:100%">
 	  
     </div>
 	
   </div>
-  <div id="carouselButtons" style = "float:right">
-    <button id="playButton" type="button" class="btn btn-default btn-xs">
+  
+  
+  
+ <div class="container-carousel" >
+
+<!--CAROUSER-HEADER-->
+<h3 class="header-carousel" > Best sushi in town </h3>
+
+<div id="carouselButtons" >
+    <button id="playButton" style="visibility:hidden" type="button" class="btn btn-default btn-xs">
         <span class="glyphicon glyphicon-play" > </span>
      </button>
     <button id="pauseButton" type="button" class="btn btn-default btn-xs">
         <span class="glyphicon glyphicon-pause" ></span>
     </button>
-   </div>  
+ </div>  
+
+
+ <script>
+	$(function () {
+		var totalItems = $('.item').length;
+		var currentIndex = $('div.active').index() + 1;
+		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');
+
+
+		$('#myCarousel').bind(('slid'), function() {
+		currentIndex = $('div.active').index() + 1;
+		$('.numero-slide').html(''+currentIndex+'/'+totalItems+'');
+		});
+
+	});
+</script>
+ <!-- <p id="photo-frame" class="photo-number" > Best sushi in town </p>-->
+ <div class="numero-slide"> </div> 
+
+ </div> 
+
 
 
   
@@ -109,6 +140,9 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  
+  
+
   
 </div>
   

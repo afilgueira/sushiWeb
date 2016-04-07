@@ -1,3 +1,6 @@
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css');
+@import url('http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css');
+
 p.segundo-titulo{
    font: normal normal normal 17px 'Open Sans',sans-serif ;
    color: white;
@@ -92,6 +95,10 @@ li a.active
 color: rgb(114, 195, 118);
 }
 
+.container-carousel:hover {
+
+
+}
 
 /*NAV BAR*/
 
@@ -102,12 +109,41 @@ color: rgb(114, 195, 118);
 	width: 1000px;
 }
 
+/*PLAY AND STOP CAROUSEL*/
+.btn-xs.btn-default.btn{
+position:absolute ; 
+bottom:0px; 
+right:80px; 
+color: rgb(0,0,0);
+z-index=15; 
+background: rgba(0,0,0,0);
+border-color: rgba(0,0,0,0);
+}
+/*PLAY AND STOP CAROUSEL*/
+
+/*NUMERO DE SLIDE*/
+.numero-slide{
+position:absolute ; 
+bottom:0px; 
+right:60px; 
+color: rgb(0,0,0);
+z-index=15; 
+background: rgba(0,0,0,0);
+border-color: rgba(0,0,0,0);
+font-weight:bold;
+}
+
+
+
+/*NUMERO DE SLIDE*/
+
+
 .header-carousel{
-position:relative; 
-top: 300px; 
+position:absolute; 
+top: 350px; 
+right:0;
 z-index:12; 
 font: normal normal normal 50px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ; 
-float:right; 
 text-align:right; 
 padding:10px 20px 10px 100px; 
 color:white;
@@ -134,7 +170,10 @@ width: 800px;
 
   /* FLECHAS DEL CAROUSEL SIN FONDO GRADIENTE*/
 .carousel-control.left, .carousel-control.right {
-    background-image: none !important;
+    position:absolute;
+	top:50%;
+	background-image: none !important;
+	height:40px !important;
 }
 /* FLECHAS DEL CAROUSEL SIN FONDO GRADIENTE*/
 
@@ -230,3 +269,5 @@ color: rgb(174, 255, 178);
 float:right; 
 padding-right:3%; 
 color:white}
+
+
