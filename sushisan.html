@@ -19,7 +19,7 @@
     <script src="/_catalogs/masterpage/UHN/js/bootstrap.min.js"></script>
     <script>
 
-      $(function () { 
+      $( document ).ready(function() { 
       $('.carousel').carousel({ interval:4000 });
       $(".carousel-description-container").hide() ;
       });
@@ -28,15 +28,21 @@
      <script>
      $(function () { 
 
-
       
+
       $("#myCarousel").on('slide.bs.carousel', function () {
+
             $(".carousel-description-container").hide() ;
+          
         });
        
        $('#myCarousel').on('slid.bs.carousel', function () {
-            $(".carousel-description-container").fadeIn(2000) ;
-        });
+
+        if( $('#myCarousel').is(':hover') === true) {
+            $(".carousel-description-container").fadeIn(1200) ;
+
+            }
+        });   
 
 
     
@@ -78,7 +84,7 @@ $(function () {
       </ul>
     </nav>
 
-    <br> <br>
+    <div style="margin-bottom: 50px"></div>
     <!--WRAPPER-->
     <div class="wrapper">
 
@@ -176,7 +182,7 @@ $(function () {
   <!--WRAPPER-->
   <div class="push"></div>
 
-  <br> <br>
+  <div style="margin-bottom: 50px"></div>
 
   <!--FOOTER-->
   <div class="footer" id ="footer" >
