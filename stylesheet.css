@@ -1,9 +1,9 @@
 
 #logo-sushisan{
 
-position:absolute;
-top:-60px; 
-left:-60px
+  position:absolute;
+  top:-60px; 
+  left:-60px
 
 }
 #my-indicators {
@@ -15,34 +15,34 @@ left:-60px
 } 
 
 .header-carousel{
-position:absolute; 
-top: 370px; 
-right:0;
-font: normal normal normal 50px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ; 
-text-align:right; 
-padding:10px 20px 10px 100px; 
-color:white;
-background: rgba(85, 85, 85, 0.85);
+  position:absolute; 
+  top: 370px; 
+  right:0;
+  font: normal normal normal 50px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ; 
+  text-align:right; 
+  padding:10px 20px 10px 100px; 
+  color:white;
+  background: rgba(85, 85, 85, 0.85);
 
 }
 .carousel-indicators li{
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    margin: 10px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: #ffffff;
-    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,1);  
-  }
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,1);  
+}
 
-  .carousel-indicators .active {
-    width: 48px;
-    height: 48px;
-    margin: 10px;
-    background-color: #123242;
+.carousel-indicators .active {
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  background-color: #123242;
 }
 
 
@@ -52,7 +52,7 @@ background: rgba(85, 85, 85, 0.85);
   width: 100%; 
   height: 100px;
   background-color: rgba(150, 150, 150, 0.90);
- 
+  
 }
 
 
@@ -64,28 +64,28 @@ background: rgba(85, 85, 85, 0.85);
 }
 
 .carousel-description {
-    padding-left: 20px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
+  padding-left: 20px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
 
 
 }
 
 p.segundo-titulo{
-   font: normal normal normal 17px 'Open Sans',sans-serif ;
-   color: white;
+ font: normal normal normal 17px 'Open Sans',sans-serif ;
+ color: white;
 }
 
 h1 {
-    font: normal normal normal 70px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
-	}
-	
+  font: normal normal normal 70px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
+}
+
 h2{
-font: normal normal normal 25px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
+  font: normal normal normal 25px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
 }
 
 h1 ,h2,h3{
-color: white !important; 
+  color: white !important; 
 }
 
 
@@ -109,13 +109,13 @@ color: white !important;
 
 
 div.hr {
-width: 100%;
-background: #fff  no-repeat scroll center;
+  width: 100%;
+  background: #fff  no-repeat scroll center;
 
 }
 
 div.hr hr {
-display: none;
+  display: none;
 
 }
 
@@ -124,19 +124,19 @@ display: none;
 
 ul {
 	height:10px
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    top: 0;
-    width: 100%; 
-	/* position: fixed -> tiene pocas páginas y no vale la pena perder pantalla para algo que probablemente no se use (pasar de menu a Sushi San)*/
-	
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%; 
+  /* position: fixed -> tiene pocas páginas y no vale la pena perder pantalla para algo que probablemente no se use (pasar de menu a Sushi San)*/
+  
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 body { 
@@ -148,21 +148,21 @@ body {
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
-	color: rgb(174, 255, 178);
+  background-color: #111;
+  color: rgb(174, 255, 178);
 }
 
 li a.active
 {
-color: rgb(114, 195, 118);
+  color: rgb(114, 195, 118);
 }
 
 .container-carousel:hover {
@@ -181,26 +181,26 @@ color: rgb(114, 195, 118);
 
 /*PLAY AND STOP CAROUSEL*/
 .btn-xs.btn-default.btn{
-position:absolute ; 
-bottom:0px; 
-right:80px; 
-color: rgb(0,0,0);
-z-index:15; 
-background: rgba(0,0,0,0);
-border-color: rgba(0,0,0,0);
+  position:absolute ; 
+  bottom:0px; 
+  right:80px; 
+  color: rgb(0,0,0);
+  z-index:15; 
+  background: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
 }
 /*PLAY AND STOP CAROUSEL*/
 
 /*NUMERO DE SLIDE*/
 .numero-slide{
-position:absolute ; 
-bottom:0px; 
-right:60px; 
-color: rgb(0,0,0);
-z-index=15; 
-background: rgba(0,0,0,0);
-border-color: rgba(0,0,0,0);
-font-weight:bold;
+  position:absolute ; 
+  bottom:0px; 
+  right:60px; 
+  color: rgb(0,0,0);
+  z-index=15; 
+  background: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  font-weight:bold;
 }
 
 
@@ -212,27 +212,27 @@ font-weight:bold;
 
 .footer, .push {
 
-position:relative;
-bottom:0;
-height: 4em;
-color: white;
-width: 1000px;
-text-align:left;
-margin: 0 auto 0 auto;
+  position:relative;
+  bottom:0;
+  height: 4em;
+  color: white;
+  width: 1000px;
+  text-align:left;
+  margin: 0 auto 0 auto;
 }
 
 .centrar-footer{
-margin: 0 auto 0 10%;
-width: 800px;
+  margin: 0 auto 0 10%;
+  width: 800px;
 }
 
 
-  /* FLECHAS DEL CAROUSEL SIN FONDO GRADIENTE*/
+/* FLECHAS DEL CAROUSEL SIN FONDO GRADIENTE*/
 .carousel-control.left, .carousel-control.right {
   position:absolute;
-	top:50%;
-	background-image: none !important;
-	height:40px !important;
+  top:50%;
+  background-image: none !important;
+  height:40px !important;
 }
 
 .carousel-caption{
@@ -244,16 +244,16 @@ width: 800px;
 
 /*ESTILO DE LAS LINEAS*/
 hr.larga {
-    border-top: dashed 2px rgb(174, 255, 178);
-	margin: 0 3% 0 0;
-	}
-	
+  border-top: dashed 2px rgb(174, 255, 178);
+  margin: 0 3% 0 0;
+}
+
 hr.corta{
-    border-top: dashed 2px rgb(174, 255, 178);
-	}
+  border-top: dashed 2px rgb(174, 255, 178);
+}
 /*ESTILO DE LAS LINEAS*/
-	
-	
+
+
 .derecha
 {
  float:right;
@@ -275,49 +275,49 @@ hr.corta{
 
 
 .desc{
-float:left;
-color: white;
+  float:left;
+  color: white;
 }
 
 .desc2{
-float: left;
-color: rgb(174, 255, 178);
+  float: left;
+  color: rgb(174, 255, 178);
 }
 
 .desc3{
-text-align:left;
-padding-right:20%;
-color: white;
-font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;
+  text-align:left;
+  padding-right:20%;
+  color: white;
+  font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;
 }
 
 .precio
 {
-text-align:right;
-color: white;
+  text-align:right;
+  color: white;
 }
 
 .precio2
 {
-padding-right:6%;
-text-align:right;
-color: white;
+  padding-right:6%;
+  text-align:right;
+  color: white;
 }
 
 
 .descAbajo2{
-font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;
-text-align:left;
-color: white;
+  font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;
+  text-align:left;
+  color: white;
 }
 
 .descAbajo1{
-text-align:left;
-color: rgb(174, 255, 178);
+  text-align:left;
+  color: rgb(174, 255, 178);
 }
 .precio-abajo{
-float:right; 
-padding-right:3%; 
-color:white}
+  float:right; 
+  padding-right:3%; 
+  color:white}
 
 
