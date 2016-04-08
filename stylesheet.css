@@ -1,4 +1,66 @@
 
+#logo-sushisan{
+
+position:absolute;
+top:-60px; 
+left:-60px
+
+}
+#my-indicators {
+
+  position:absolute ;
+  top:30px;
+  left:775px ;
+  width: 150px ;
+} 
+
+.header-carousel{
+position:absolute; 
+top: 370px; 
+right:0;
+font: normal normal normal 50px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ; 
+text-align:right; 
+padding:10px 20px 10px 100px; 
+color:white;
+background: rgba(85, 85, 85, 0.85);
+
+}
+.carousel-indicators li{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,1);  
+  }
+
+  .carousel-indicators .active {
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    background-color: #123242;
+}
+
+
+.carousel-description-container {
+  position:absolute; 
+  bottom: -10px; 
+  width: 100%; 
+  height: 100px;
+  background-color: rgba(150, 150, 150, 0.90);
+ 
+}
+
+
+.carousel-description {
+  padding-left: 20px;
+
+
+}
 
 p.segundo-titulo{
    font: normal normal normal 17px 'Open Sans',sans-serif ;
@@ -114,7 +176,7 @@ position:absolute ;
 bottom:0px; 
 right:80px; 
 color: rgb(0,0,0);
-z-index=15; 
+z-index:15; 
 background: rgba(0,0,0,0);
 border-color: rgba(0,0,0,0);
 }
@@ -137,18 +199,7 @@ font-weight:bold;
 /*NUMERO DE SLIDE*/
 
 
-.header-carousel{
-position:absolute; 
-top: 350px; 
-right:0;
-z-index:12; 
-font: normal normal normal 50px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ; 
-text-align:right; 
-padding:10px 20px 10px 100px; 
-color:white;
-background: rgba(85, 85, 85, 0.85);
 
-}
 
 .footer, .push {
 
@@ -169,21 +220,12 @@ width: 800px;
 
   /* FLECHAS DEL CAROUSEL SIN FONDO GRADIENTE*/
 .carousel-control.left, .carousel-control.right {
-    position:absolute;
+  position:absolute;
 	top:50%;
 	background-image: none !important;
 	height:40px !important;
 }
-/* FLECHAS DEL CAROUSEL SIN FONDO GRADIENTE*/
 
-/* Editar cuando los pueda meter en la imagen
-.btn-xs{
-  
-    background-color: #000000 !important;
-    border-color: #000000!important;
-    color: #FFFFFF !important;
-  }
-*/
 .carousel-caption{
 
  margin:0 auto;
