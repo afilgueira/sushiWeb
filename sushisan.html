@@ -19,9 +19,31 @@
     <script src="/_catalogs/masterpage/UHN/js/bootstrap.min.js"></script>
     <script>
 
-      $('.carousel').carousel({ interval:4000 });  
+      $(function () { 
+      $('.carousel').carousel({ interval:4000 });
+      $(".carousel-description-container").hide() ;
+      });
 
-      $(function () {  
+    </script>
+     <script>
+     $(function () { 
+
+
+      
+      $("#myCarousel").on('slide.bs.carousel', function () {
+            $(".carousel-description-container").hide() ;
+        });
+       
+       $('#myCarousel').on('slid.bs.carousel', function () {
+            $(".carousel-description-container").fadeIn(2000) ;
+        });
+
+
+    
+     });
+    </script>
+      <script>
+$(function () { 
         $('#playButton').click(function () {
           $('#myCarousel').carousel('cycle');
           document.getElementById("playButton").style.visibility = "hidden";
@@ -32,8 +54,11 @@
           document.getElementById("pauseButton").style.visibility = "hidden";
           document.getElementById("playButton").style.visibility = "visible";
         });
+
       });
-    </script>
+            </script>
+      
+
 
 
     <!--CAROUSEL SCRIPT-->
@@ -60,7 +85,7 @@
 
 
      <!--CAROUSEL-->
-     <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="false" >
 
 
        <!-- Indicators -->
@@ -72,21 +97,24 @@
         <div class="item active">
           <img src="sushi4.jpg"  alt="Sushi" style="height:550px; width:100%" >
            <div class="carousel-description-container">
-          <p class="carousel-description">Soy una descripcion </p>
+          <h4 class="carousel-title">Soy un titulo </h4>
+          <p class="carousel-description">Soy una descripcion</p>
         </div>
         </div>
 
         <div class="item">
           <img src="sushi.jpg" alt="Sushi" style="height:550px; width:100%">
           <div class="carousel-description-container">
-          <p>Soy una descripcion </p>
+          <h4 class="carousel-title">Soy un titulo </h4>
+          <p class="carousel-description">Soy una descripcion</p>
           </div>
         </div>
 
         <div class="item">
           <img src="sushi2.jpg" alt="Sushi" style="height:550px; width:100%">
           <div class="carousel-description-container">
-          <p >Soy una descripcion </p>
+          <h4 class="carousel-title">Soy un titulo </h4>
+          <p class="carousel-description">Soy una descripcion</p>
           </div>
 
         </div>
