@@ -145,7 +145,7 @@ li.nav-gral {
 }
 
 body { 
-  background: url(backgroundimg.jpg) no-repeat  fixed; 
+  background: url(imgs/backgroundimg.jpg) no-repeat  fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
