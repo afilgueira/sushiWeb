@@ -17,56 +17,7 @@
 
     <!--CAROUSEL SCRIPT-->
     <script src="/_catalogs/masterpage/UHN/js/bootstrap.min.js"></script>
-    <script>
-
-      $( document ).ready(function() { 
-        $('.carousel').carousel({ interval:4000 });
-        $(".carousel-description-container").hide() ;
-      });
-
-    </script>
-    <script>
-     $(function () { 
-
-      
-      $("#myCarousel").mouseover(function () {
-
-        $(".carousel-description-container").fadeIn(1200)  ;
-      });
-
-      $("#myCarousel").on('slide.bs.carousel', function () {
-
-        $(".carousel-description-container").hide() ;
-        
-      });
-      
-      $('#myCarousel').on('slid.bs.carousel', function () {
-
-        if( $('#myCarousel').is(':hover') === true) {
-          $(".carousel-description-container").fadeIn(1200) ;
-
-        }
-      });   
-
-
-      
-    });
-  </script>
-  <script>
-    $(function () { 
-      $('#playButton').click(function () {
-        $('#myCarousel').carousel('cycle');
-        document.getElementById("playButton").style.visibility = "hidden";
-        document.getElementById("pauseButton").style.visibility = "visible";
-      });
-      $('#pauseButton').click(function () {
-        $('#myCarousel').carousel('pause');
-        document.getElementById("pauseButton").style.visibility = "hidden";
-        document.getElementById("playButton").style.visibility = "visible";
-      });
-
-    });
-  </script>
+    <script src="scripts/carousel-script.js"></script>
   
 
 
@@ -82,9 +33,9 @@
 
 
   <nav>
-    <ul>
-      <li><a href="sushisan.html" class="active" >Sushi San</a></li> 
-      <li><a href="menu.html" >Menu</a></li>
+    <ul class="navbar">
+      <li class="nav-gral"><a href="sushisan.html" class="active" >Sushi San</a></li> 
+      <li class="nav-gral"><a href="menu.html" >Menu</a></li>
     </ul>
   </nav>
 
