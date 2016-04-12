@@ -18,7 +18,7 @@
 
 </head>
 
-<body ng-app="app">
+<body ng-app="app" ng-controller="MainController as main">
 
 
 	<nav>
@@ -49,111 +49,66 @@
 			<div class="row">
 
 				<div class="col-sm-3">
-					<h2>Nigiri</h2>
-					<p class="segundo-titulo">2 pieces per order</p>
-					<br>
+					
 
-					<div ng-controller="MainController as main">
+						<h2>{{main.nagiri.title}} </h2>
+						<p class="segundo-titulo">{{main.nagiri.subtitle}} </p>
+						<br>
+
+						
 						<ul class="list-group">
-							<li  ng-repeat="item in main.items"> 
+							<li  ng-repeat="item in main.nagiri.descriptions" > 
 								<p class="desc"> {{item.producto}}  </p>
 								<p class="precio">{{item.precio | currency}}</p>
 							</li>
 						</ul>
-					</div>	
+					
+						<hr class="corta">
 
-					<hr class="corta">
+						<h2>{{main.uramaki.title}} </h2>
+						<p class="segundo-titulo">{{main.uramaki.subtitle}} </p>
+						<br>
 
-					<h2>Uramaki</h2>
-					<p class="segundo-titulo">inside out roll</p>
-					<br>
-
-					<p class="desc">Maguro</p>  
-					<p class="precio">$ 10.99</p>
-
-					<p class="desc">Hamachi</p>  
-					<p class="precio">$ 11.99</p>
-
-					<p class="desc">Sunazuri</p>  
-					<p class="precio">$ 12.99</p>
-
-					<p class="desc">Maguro</p>  
-					<p class="precio">$ 10.99</p>
-
-					<p class="desc">Hamachi</p>  
-					<p class="precio">$ 11.99</p>
-
-					<p class="desc">Sunazuri</p>  
-					<p class="precio">$ 12.99</p>
-
-					<p class="desc">Maguro</p>  
-					<p class="precio">$ 10.99</p>
-
-					<p class="desc">Hamachi</p>  
-					<p class="precio">$ 11.99</p>
-
+						
+						<ul class="list-group">
+							<li  ng-repeat="item in main.uramaki.descriptions" > 
+								<p class="desc"> {{item.producto}}  </p>
+								<p class="precio">{{item.precio | currency}}</p>
+							</li>
+						</ul>
+					
 
 
 
 				</div>
+
+
 				<div class="col-sm-3">
-					<h2>Sashimi </h2>
-					<p class="segundo-titulo">Omakase</p>
-					<br>
+					<h2>{{main.sashimi.title}} </h2>
+						<p class="segundo-titulo">{{main.sashimi.subtitle}} </p>
+						<br>
 
-					<p class="desc">Shellfish Sashimi</p>  
-					<p class="precio">$ 5.99</p>
-
-					<p class="desc">Albacore Tataki</p>  
-					<p class="precio">$ 10.99</p>
-
-					<p class="desc">Katsuo Tataki</p>  
-					<p class="precio">$ 20.99</p>
-
-					<p class="desc">Shellfish Sashimi</p>  
-					<p class="precio">$ 5.99</p>
-
-					<p class="desc">Albacore Tataki</p>  
-					<p class="precio">$ 10.99</p>
-
-					<p class="desc">Katsuo Tataki</p>  
-					<p class="precio">$ 20.99</p>
-
-					<p class="desc">Shellfish Sashimi</p>  
-					<p class="precio">$ 5.99</p>
-
-					<p class="desc">Albacore Tataki</p>  
-					<p class="precio">$ 10.99</p>
+						
+						<ul class="list-group">
+							<li  ng-repeat="item in main.sashimi.descriptions" > 
+								<p class="desc"> {{item.producto}}  </p>
+								<p class="precio">{{item.precio | currency}}</p>
+							</li>
+						</ul>
 
 					<hr class="corta">
 
-					<h2>Hosomaki </h2>
-					<p class="segundo-titulo">with seaweed outside</p>
-					<br>
+					<h2>{{main.hosomaki.title}} </h2>
+						<p class="segundo-titulo">{{main.hosomaki.subtitle}} </p>
+						<br>
 
-					<p class="desc">Shellfish Sashimi</p>  
-					<p class="precio">$ 5.99</p>
-
-					<p class="desc">Albacore Tataki</p>  
-					<p class="precio">$ 10.99</p>
-
-					<p class="desc">Katsuo Tataki</p>  
-					<p class="precio">$ 20.99</p>
-
-					<p class="desc">Shellfish Sashimi</p>  
-					<p class="precio">$ 5.99</p>
-
-					<p class="desc">Albacore Tataki</p>  
-					<p class="precio">$ 10.99</p>
-
-					<p class="desc">Katsuo Tataki</p>  
-					<p class="precio">$ 20.99</p>
-
-					<p class="desc">Shellfish Sashimi</p>  
-					<p class="precio">$ 5.99</p>
-
-					<p class="desc">Albacore Tataki</p>  
-					<p class="precio">$ 10.99</p>
+						
+						<ul class="list-group">
+							<li  ng-repeat="item in main.hosomaki.descriptions" > 
+								<p class="desc"> {{item.producto}}  </p>
+								<p class="precio">{{item.precio | currency}}</p>
+							</li>
+						</ul>
 
 
 				</div>

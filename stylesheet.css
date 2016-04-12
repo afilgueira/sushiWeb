@@ -136,6 +136,10 @@ ul.navbar {
   
 }
 
+li{
+   list-style-type: none;
+}
+
 li.nav-gral {
   float: left;
 }
