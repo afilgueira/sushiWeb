@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html lang="en-US" ng-app="app">
+  <head>
+    <!--imagen-->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css");
+    <!--meta-->
+    <meta name="description" content="Sushi selling">
+    <meta name="keywords" content="Sushi,Sushi San,Nagiri,Unagi">
+    <meta name="author" content="lucho">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular-route.js"></script>
+
+    <script src="scripts/config.js"></script>
+
+    <!--CAROUSEL SCRIPT-->
+    <script src="/_catalogs/masterpage/UHN/js/bootstrap.min.js"></script>
+  
+
+
+
+  <title ng-bind="title"> </title>
+
+  </head>
+
+<body >
+
+
+<div header></div>
+
+<div style="margin-bottom: 50px"></div>
+
+<div class="wrapper">
+<ng-view onload="viewLoaded()"> </ng-view>
+    
+</div>
+
+
+<div class="push"></div>
+
+<div style="margin-bottom: 50px"></div>
+
+<!--FOOTER-->
+<div footer> </div>
+
+
+</body>
+
+
+</html>

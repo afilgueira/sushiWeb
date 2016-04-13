@@ -1,174 +1,119 @@
-<!DOCTYPE html>
-<html lang="en-US"> <!--cual va?-->
-<head>
-	<!--imagen-->
-	<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="stylesheet.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
-	<script src="scripts/main.ctrl.js"></script>
-	<!--meta-->
-	<meta name="description" content="Sushi selling">
-	<meta name="keywords" content="Sushi,Sushi San,Nagiri,Unagi">
-	<meta name="author" content="lucho">
-	<meta charset="UTF-8">
-
-	<title> Sushi| Menu </title>
-
-</head>
-
-<body ng-app="app" ng-controller="MainController as main">
+<div class="wrapperTransparency">
+	<img src="imgs/logo-noback.png" style="float:right; padding-right:30px; padding-top:20px">
+	<div style="margin-bottom: 100px"></div>
+	<h1>MENU</h1>
 
 
-	<div header> </div>
+	<hr class="larga">
 
 
 
 
-	<!--WRAPPER-->
-	<div class="wrapper" >
+	<div class="row">
+
+		<div class="col-sm-3">
 
 
-		<div class="wrapperTransparency">
-			<img src="imgs/logo-noback.png" style="float:right; padding-right:30px; padding-top:20px">
-			<div style="margin-bottom: 100px"></div>
-			<h1>MENU</h1>
-
-
-			<hr class="larga">
-
-
-
-
-			<div class="row">
-
-				<div class="col-sm-3">
-					
-
-					<h2>{{main.nagiri.title}} </h2>
-					<p class="segundo-titulo">{{main.nagiri.subtitle}} </p>
-					<br>
-
-
-					<ul class="list-group">
-						<li  ng-repeat="item in main.nagiri.descriptions" > 
-							<p class="desc"> {{item.producto}}  </p>
-							<p class="precio">{{item.precio | currency}}</p>
-						</li>
-					</ul>
-					
-					<hr class="corta">
-
-					<h2>{{main.uramaki.title}} </h2>
-					<p class="segundo-titulo">{{main.uramaki.subtitle}} </p>
-					<br>
-
-
-					<ul class="list-group">
-						<li  ng-repeat="item in main.uramaki.descriptions" > 
-							<p class="desc"> {{item.producto}}  </p>
-							<p class="precio">{{item.precio | currency}}</p>
-						</li>
-					</ul>
-					
-
-
-
-				</div>
-
-
-				<div class="col-sm-3">
-					<h2>{{main.sashimi.title}} </h2>
-					<p class="segundo-titulo">{{main.sashimi.subtitle}} </p>
-					<br>
-
-
-					<ul class="list-group">
-						<li  ng-repeat="item in main.sashimi.descriptions" > 
-							<p class="desc"> {{item.producto}}  </p>
-							<p class="precio">{{item.precio | currency}}</p>
-						</li>
-					</ul>
-
-					<hr class="corta">
-
-					<h2>{{main.hosomaki.title}} </h2>
-					<p class="segundo-titulo">{{main.hosomaki.subtitle}} </p>
-					<br>
-
-
-					<ul class="list-group">
-						<li  ng-repeat="item in main.hosomaki.descriptions" > 
-							<p class="desc"> {{item.producto}}  </p>
-							<p class="precio">{{item.precio | currency}}</p>
-						</li>
-					</ul>
-
-
-				</div>
-				<div class="col-sm-6">
-					<div class="left-line">
-						
-						<h2>{{main.specialty.title}} </h2>
-						<p class="segundo-titulo">{{main.specialty.subtitle}} </p>
-						<br>
-
-						
-						<ul class="list-group">
-							<li  ng-repeat="item in main.specialty.descriptions" > 
-								<p class="desc2"> {{item.producto}}  </p>
-								<p class="precio2">{{item.precio | currency}}</p>
-								<p class="desc3"> {{item.detalle}}  </p>
-							</li>
-						</ul>
-
-					</div>
-				</div>
-
-			</div>
-			<br> 
-
-			<hr class="larga">
-
-
-			<h2>{{main.kitchen.title}} </h2>
-			<p class="segundo-titulo">{{main.kitchen.subtitle}} </p>
+			<h2>{{main.nagiri.title}} </h2>
+			<p class="segundo-titulo">{{main.nagiri.subtitle}} </p>
 			<br>
 
+
 			<ul class="list-group">
-				<li  ng-repeat="item in main.kitchen.descriptions" > 
+				<li  ng-repeat="item in main.nagiri.descriptions" > 
+					<p class="desc"> {{item.producto}}  </p>
+					<p class="precio">{{item.precio | currency}}</p>
+				</li>
+			</ul>
 
-					<span class="precio-abajo">{{item.precio | currency}}</span>
-					<p class="descAbajo1"> {{item.producto}}  </p>
-					<p class="descAbajo2">{{item.detalle}}</p> <br>
+			<hr class="corta">
+
+			<h2>{{main.uramaki.title}} </h2>
+			<p class="segundo-titulo">{{main.uramaki.subtitle}} </p>
+			<br>
+
+
+			<ul class="list-group">
+				<li  ng-repeat="item in main.uramaki.descriptions" > 
+					<p class="desc"> {{item.producto}}  </p>
+					<p class="precio">{{item.precio | currency}}</p>
+				</li>
+			</ul>
+
+
+
+
+		</div>
+
+
+		<div class="col-sm-3">
+			<h2>{{main.sashimi.title}} </h2>
+			<p class="segundo-titulo">{{main.sashimi.subtitle}} </p>
+			<br>
+
+
+			<ul class="list-group">
+				<li  ng-repeat="item in main.sashimi.descriptions" > 
+					<p class="desc"> {{item.producto}}  </p>
+					<p class="precio">{{item.precio | currency}}</p>
+				</li>
+			</ul>
+
+			<hr class="corta">
+
+			<h2>{{main.hosomaki.title}} </h2>
+			<p class="segundo-titulo">{{main.hosomaki.subtitle}} </p>
+			<br>
+
+
+			<ul class="list-group">
+				<li  ng-repeat="item in main.hosomaki.descriptions" > 
+					<p class="desc"> {{item.producto}}  </p>
+					<p class="precio">{{item.precio | currency}}</p>
+				</li>
+			</ul>
+
+
+		</div>
+		<div class="col-sm-6">
+			<div class="left-line">
+
+				<h2>{{main.specialty.title}} </h2>
+				<p class="segundo-titulo">{{main.specialty.subtitle}} </p>
+				<br>
+
+
+				<ul class="list-group">
+					<li  ng-repeat="item in main.specialty.descriptions" > 
+						<p class="desc2"> {{item.producto}}  </p>
+						<p class="precio2">{{item.precio | currency}}</p>
+						<p class="desc3"> {{item.detalle}}  </p>
 					</li>
-						</ul>
+				</ul>
 
-
-
-				</div>
 			</div>
 		</div>
+
 	</div>
-	<!--WRAPPER-->
+	<br> 
+
+	<hr class="larga">
 
 
-	<div class="push"></div>
+	<h2>{{main.kitchen.title}} </h2>
+	<p class="segundo-titulo">{{main.kitchen.subtitle}} </p>
+	<br>
+
+	<ul class="list-group">
+		<li  ng-repeat="item in main.kitchen.descriptions" > 
+
+			<span class="precio-abajo">{{item.precio | currency}}</span>
+			<p class="descAbajo1"> {{item.producto}}  </p>
+			<p class="descAbajo2">{{item.detalle}}</p> <br>
+		</li>
+	</ul>
 
 
-	<br> <br>
 
-	<div footer></div>
-	<!--FOOTER-->
+</div>
 
-	<!--FOOTER-->
-
-
-
-
-
-
-
-</body>
-
-</html>

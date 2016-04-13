@@ -1,11 +1,30 @@
-angular.module('app', ['ngRoute'])
+angular.module("app", ["ngRoute"]) 
 
+.run(['$location', '$rootScope', function($location, $rootScope) {
+    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+        $rootScope.title = current.$$route.title;
+    });
+}])
+
+.config(function ($routeProvider) 
+  { $routeProvider 
+  .when("/menu", 
+    { templateUrl: "/menu.html", 
+    controller: "MainController as main" ,
+    title: 'Sushi | Menu'
+  }) 
+  .when("/", 
+    { templateUrl: "/sushisan.html", 
+    controller: "CarouselCtrl" ,
+    title: 'Sushi'
+  }) 
+
+}) 
 
 .directive('footer', function () { 
     return {
     restrict: 'A',
-    template: '<div class="footer" id ="footer" > <div class="footerTransparency"> <div class="centrar-footer"> <div class="row"> <div class="col-sm-4"> <div class="right-line"> <h3>Horarios</h3> <p> Mon:    <span class="derecha">11:00am - 11:00pm</span><br> Tue:     <span class="derecha">11:00am - 11:00pm</span><br> Wed:    <span class="derecha">11:00am - 11:00pm</span><br> Thurs:  <span class="derecha">11:00am - 11:00pm</span><br> Fri:    <span class="derecha">11:00am - 11:00pm</span><br> </div> </div> <div class="col-sm-4"> <div class="right-line"> <h3>Contacto</h3> <p> 500 Terry Francois Street<br> San Francisco,<br> CA 94158<br> T: 123-456-7890<br> F: 123-456-7890<br> </p> </div> </div> <div class="col-sm-4"> <h3>Pedidos</h3> <p> Lunch:  11:00am -  4:30pm<br> Dinner:  4:30pm - 10:30pm<br> ​<br> <b>Happy Hour:</b> <br> Mon-Wed  3:00pm -  7:00pm<br> </p> </div> </div> </div> </div> <br> <br> </div> </div>',
-    /*templateUrl: '/templates/footer.html', ONLY ON LOCALHOST*/
+    templateUrl: '/templates/footer.html',
     scope: true,    
     transclude : false
     };
@@ -15,8 +34,7 @@ angular.module('app', ['ngRoute'])
 .directive('header', function () { 
     return {
     restrict: 'A',
-    template: '<nav> <ul ng-controller="NavCtrl" class="navbar"> <li class="nav-gral" ng-repeat="item in items" ><a ng-class="{active: isActive(item)}" href="{{item.path}}">{{item.title}}</a></li> </ul> </nav>' ,
-    /*templateUrl: '/templates/header.html', ONLY ON LOCALHOST*/
+    templateUrl: '/templates/header.html',
     scope: true,    
     transclude : false
     };
@@ -26,13 +44,13 @@ angular.module('app', ['ngRoute'])
 
 
     $scope.items = [
-      {path: 'menu.html', title: 'Menu'},
-      {path: 'sushisan.html', title: 'SushiSan'},
+      {path: '/menu', title: 'Menu'},
+      {path: '/', title: 'SushiSan'},
     ];
 
     $scope.isActive = function(item) {
       if (item.path == $location.path()) {
-      	
+        
         return true;
       }
 
@@ -40,6 +58,23 @@ angular.module('app', ['ngRoute'])
     };
 
   }])
+
+.controller('CarouselCtrl', ['$scope', function($scope) {
+
+
+  $scope.viewLoaded=function(){
+ $('.carousel ').carousel()
+}
+
+  
+
+  }])
+
+.controller('homeController', function() {
+
+
+  })
+
 
 .controller("MainController", function(){
 
@@ -312,4 +347,3 @@ angular.module('app', ['ngRoute'])
 
 
       });
-
