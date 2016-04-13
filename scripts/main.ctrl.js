@@ -22,16 +22,20 @@ angular.module('app', [])
 })
 
 .controller('NavCtrl', ['$scope', '$location', function($scope, $location) {
+
+
     $scope.items = [
       {path: 'menu.html', title: 'Menu'},
       {path: 'sushisan.html', title: 'SushiSan'},
     ];
+
     $scope.isActive = function(item) {
       if (item.path == $location.path()) {
         return true;
       }
         return false;
     };
+
   }])
 
 .controller("MainController", function(){
