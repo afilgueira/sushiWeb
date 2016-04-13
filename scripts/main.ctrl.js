@@ -4,21 +4,35 @@ angular.module('app', [])
     return {
     restrict: 'A',
     template: '<div class="footer" id ="footer" > <div class="footerTransparency"> <div class="centrar-footer"> <div class="row"> <div class="col-sm-4"> <div class="right-line"> <h3>Horarios</h3> <p> Mon:    <span class="derecha">11:00am - 11:00pm</span><br> Tue:     <span class="derecha">11:00am - 11:00pm</span><br> Wed:    <span class="derecha">11:00am - 11:00pm</span><br> Thurs:  <span class="derecha">11:00am - 11:00pm</span><br> Fri:    <span class="derecha">11:00am - 11:00pm</span><br> </div> </div> <div class="col-sm-4"> <div class="right-line"> <h3>Contacto</h3> <p> 500 Terry Francois Street<br> San Francisco,<br> CA 94158<br> T: 123-456-7890<br> F: 123-456-7890<br> </p> </div> </div> <div class="col-sm-4"> <h3>Pedidos</h3> <p> Lunch:  11:00am -  4:30pm<br> Dinner:  4:30pm - 10:30pm<br> ​<br> <b>Happy Hour:</b> <br> Mon-Wed  3:00pm -  7:00pm<br> </p> </div> </div> </div> </div> <br> <br> </div> </div>',
-    /*templateUrl: '/footer.html', ONLY ON LOCALHOST*/
+    /*templateUrl: '/templates/footer.html', ONLY ON LOCALHOST*/
     scope: true,    
     transclude : false
     };
 })
 
+
 .directive('header', function () { 
     return {
     restrict: 'A',
-    template: '<nav> <ul class="navbar"> <li class="nav-gral"><a href="sushisan.html" >Sushi San</a></li> <li class="nav-gral"><a href="menu.html" >Menu</a></li> </ul> </nav>' ,
-    /*templateUrl: '/header.html', ONLY ON LOCALHOST*/
+    template: '<nav> <ul ng-controller="NavCtrl" class="navbar"> <li class="nav-gral" ng-repeat="item in items" ><a ng-class="{active: isActive(item)}" href="{{item.path}}">{{item.title}}</a></li> </ul> </nav>' ,
+    /*templateUrl: '/templates/header.html', ONLY ON LOCALHOST*/
     scope: true,    
     transclude : false
     };
 })
+
+.controller('NavCtrl', ['$scope', '$location', function($scope, $location) {
+    $scope.items = [
+      {path: 'menu.html', title: 'Menu'},
+      {path: 'sushisan.html', title: 'SushiSan'},
+    ];
+    $scope.isActive = function(item) {
+      if (item.path == $location.path()) {
+        return true;
+      }
+        return false;
+    };
+  }])
 
 .controller("MainController", function(){
 

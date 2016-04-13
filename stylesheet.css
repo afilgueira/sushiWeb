@@ -167,8 +167,9 @@ li a:hover {
 
 li a.active
 {
-  color: rgb(114, 195, 118);
+  color: rgb(114, 195, 118) ;
 }
+
 
 
 /*NAV BAR*/
