@@ -36,53 +36,14 @@ angular.module('app')
   })
 
 
-.controller("MainController", function($http){
+.controller("MainController", function(dataService){
 
  var vm = this;
 
-$http({
+ dataService.getData().then(function(data) {
+   vm.ejemplo = data;
+  });
 
-  method: "GET",
-  url: "https://sheetsu.com/apis/v1.0/e597ba54"})
-.then(function (response) {
-vm.ejemplo =response.data;
-});
-
-  vm.horarios= {
-
-  horario : [
-  {
-    from: "11:00am" ,
-    to: "11:00pm"
-  },
-  {
-    producto: "Hamachi" ,
-    precio:11.99
-  },
-  {
-    producto: "Sunazuri" ,
-    precio: 12.99
-  },
-  {
-    producto: "Sake" ,
-    precio:13.99
-  },
-  {
-    producto: "Saba" ,
-    precio: 14.99
-  },
-  {
-    producto: "Ebi" ,
-    precio:15.99
-  },
-  {
-    producto: "Hotate" ,
-    precio: 20.99
-  },
-  {
-    producto: "Hirame" ,
-    precio:25.99
-  }] };
 
  vm.nagiri= {
   title: "Nigiri",
