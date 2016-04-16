@@ -1,0 +1,15 @@
+<div>
+
+<h2> {{categoria}} </h2>
+
+<br>
+
+<ul class="list-group">
+				<li  ng-repeat="item in items| filter: {Tipo: categoria} :true" > 
+					<span  class="descripcion"> {{item.Nombre}} </span> 
+					<span class="precio-doble">{{item.Precio_Item | currency}}</span> 
+
+				</li>
+			</ul>
+
+</div>

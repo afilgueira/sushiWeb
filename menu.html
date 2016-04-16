@@ -11,92 +11,51 @@
 
 	<div class="row">
 
-		<div class="col-sm-3">
 
-
-			<h2>{{main.nagiri.title}} </h2>
-			<p class="segundo-titulo">{{main.nagiri.subtitle}} </p>
-			<br>
-
-
-			<ul class="list-group">
-				<li  ng-repeat="item in main.nagiri.descriptions" > 
-					<p class="desc"> {{item.producto}}  </p>
-					<p class="precio">{{item.precio | currency}}</p>
-				</li>
-			</ul>
-
-			<ul class="list-group">
-				<li  ng-repeat="item in main.ejemplo" > 
-					<p class="descAbajo2"> {{item.Nombre}} <br> </p>
-				</li>
-			</ul>
-
-
-			<hr class="corta">
-
-			<h2>{{main.uramaki.title}} </h2>
-			<p class="segundo-titulo">{{main.uramaki.subtitle}} </p>
-			<br>
-
-
-			<ul class="list-group">
-				<li  ng-repeat="item in main.uramaki.descriptions" > 
-					<p class="desc"> {{item.producto}}  </p>
-					<p class="precio">{{item.precio | currency}}</p>
-				</li>
-			</ul>
-
-
-
-
-		</div>
-
-
-		<div class="col-sm-3">
-			<h2>{{main.sashimi.title}} </h2>
-			<p class="segundo-titulo">{{main.sashimi.subtitle}} </p>
-			<br>
-
-
-			<ul class="list-group">
-				<li  ng-repeat="item in main.sashimi.descriptions" > 
-					<p class="desc"> {{item.producto}}  </p>
-					<p class="precio">{{item.precio | currency}}</p>
-				</li>
-			</ul>
-
-			<hr class="corta">
-
-			<h2>{{main.hosomaki.title}} </h2>
-			<p class="segundo-titulo">{{main.hosomaki.subtitle}} </p>
-			<br>
-
-
-			<ul class="list-group">
-				<li  ng-repeat="item in main.hosomaki.descriptions" > 
-					<p class="desc"> {{item.producto}}  </p>
-					<p class="precio">{{item.precio | currency}}</p>
-				</li>
-			</ul>
-
-
-		</div>
 		<div class="col-sm-6">
+			
+
+			<combinados items=main.ejemplo categoria="Combinados"> </combinados>
+
+			<hr class="corta">
+
+			<combinados items=main.ejemplo categoria="Combinados para chicos"> </combinados>
+
+			<hr class="corta">
+
+			<un-precio items=main.ejemplo categoria="Sashimis"> </un-precio>
+
+			<hr class="corta">
+
+			<un-precio items=main.ejemplo categoria="Bebidas"> </un-precio>
+
+			
+
+			
+
+
+		</div>
+		<div class="col-sm-6" style="padding-right: 40px">
 			<div class="left-line">
 
-				<h2>{{main.specialty.title}} </h2>
-				<p class="segundo-titulo">{{main.specialty.subtitle}} </p>
-				<br>
+			
+
+			<dos-precios items=main.ejemplo categoria="Rolls" precio1="4" precio2="8"> </dos-precios>
+
+			<hr class="corta">
 
 
-				<ul class="list-group">
-					<li  ng-repeat="item in main.specialty.descriptions" > 
-						<p class="desc2"> {{item.producto}}  </p>
-						<p class="precio2">{{item.precio | currency}}</p>
-						<p class="desc3"> {{item.detalle}}  </p>
-					</li>
-				</ul>
+			<h2>Rolls Calientes<span class="titulo-doble">x8</span> <span class="titulo-doble">x4 </span> </h2>
+
+			<ul class="list-group">
+				<li  ng-repeat="roll in main.ejemplo | filter: {Tipo: 'Rolls Calientes'} :true " > 
+					<p>
+					<span class="descripcion"> {{roll.Nombre}}  </span>
+					<span class="precio-doble">{{roll.Precio_8 | currency}}</span>
+					<span class="precio-doble">{{roll.Precio_4 | currency}}</span> <br>
+					</p>
+				</li>
+			</ul>
 
 			</div>
 		</div>

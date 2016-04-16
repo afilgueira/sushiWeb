@@ -306,6 +306,38 @@ hr.corta{
   color: white;
 }
 
+.incluye{
+  color:white;
+  font: normal normal normal 12px/1.4em 'Open Sans',sans-serif;
+}
+
+.ingredientes{
+
+  padding-left:5px;  
+  color:white;
+  font: normal normal normal 12px/1.4em 'Open Sans',sans-serif;
+}
+
+.precio-doble{
+  float:right;  
+  color:white;
+  padding-left: 10px;}
+
+.titulo-doble{
+  float:right;  
+  color:white;
+  padding-left: 30px;}
+
+  .descripcion{
+  text-align:left;  
+  color:white;
+  font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
+}
+
+
+
+
+
 
 .descAbajo2{
   font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;

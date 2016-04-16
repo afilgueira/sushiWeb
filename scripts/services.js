@@ -20,26 +20,60 @@ angular.module("app")
 	};
 
 
-});
+})
+
 /*
-.factory("filterService", function() {
-	return
-	{
-		byField: function(){
-			var filtered = [];
-			for (var i = 0;  i < items.length; i++) {
-				var item = items[i];
-				if("bebidas" == item.Nombre){
-					filtered.push(item);
+.factory('customPrices', function () {
+
+            var getPrice = function(producto)
+            {
+               var precios = [];
+			var precio4= producto.Precio_4 ;
+			if(precio4 != "") {
+				precios.push(precio4);
 				};
+			var precio6= producto.Precio_6 ;
+			if(precio6 != "") {
+				precios.push(precio6);
 				};
-				return filtered;
+			var precio8= producto.Precio_8 ;
+			if(precio8 != "") {
+				precios.push(precio8);
+				};
+			var precio9= producto.Precio_9 ;
+			if(precio9 != "") {
+				precios.push(precio9);
+				};
+			var precio10= producto.Precio_10 ;
+			if(precio10 != "") {
+				precios.push(precio10);
+            };
+            return precios;
+        }
 
+            return {
+                getPrice : getPrice
+            };
+})
 
+.factory('someCustomPrices', function (customPrices) {
 
-			}
-		}
+            var getSomePrices = function(productos)
+            {
+            	angular.forEach(productos, function(producto, key){
+            		producto.Precios = customPrices.getPrice(producto);
 
+            	} );
 
-	});
+            return productos;
+        }
+
+            return {
+                getSomePrices : getSomePrices
+            };
+});
+
 */
+
+
+

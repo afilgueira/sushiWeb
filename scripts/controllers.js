@@ -36,13 +36,19 @@ angular.module('app')
   })
 
 
-.controller("MainController", function(dataService){
+.controller("MainController", function(dataService, someCustomPrices){
 
  var vm = this;
 
  dataService.getData().then(function(data) {
    vm.ejemplo = data;
+    var productos= vm.ejemplo;
+    productos = someCustomPrices.getSomePrices(productos);
+  console.log(productos);
+
   });
+
+
 
 
  vm.nagiri= {

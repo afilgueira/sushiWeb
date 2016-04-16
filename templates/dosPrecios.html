@@ -1,0 +1,17 @@
+<div>
+
+<h2> {{categoria}} <span class="titulo-doble">x{{precio1}}</span> <span class="titulo-doble">x{{precio2}} </span> </h2>
+			<br>
+
+
+			<ul class="list-group">
+				<li  ng-repeat="item in items | filter: {Tipo: categoria} :true" > 
+					<p>
+					<span class="descripcion"> {{item.Nombre}} - <span class="ingredientes">{{item.Ingredientes}}</span> </span>
+					<span class="precio-doble"> {{item.Precio_4 | currency}} </span>
+					<span class="precio-doble">{{item.Precio_8 | currency}}</span> <br>
+					</p>
+				</li>
+			</ul>
+
+			</div>
