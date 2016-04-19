@@ -3,21 +3,12 @@
 	<div style="margin-bottom: 100px"></div>
 	<h1>MENU</h1>
 
-
 	<hr class="larga">
 
-	<div class="row">
-	<h2> Rolls </h2>
-
-		<div class="col-sm-6">
-		</div>
-
-		<div class="col-sm-6">
-		</div>
+	<div class="sub-menu">
+	
 
 	</div>
-		
-
 
 	<div class="row">
 
@@ -25,11 +16,19 @@
 		<div class="col-sm-6">
 			
 
+			<roll items=main.productos categoria="Rolls" precio1="4" precio2="8"> </roll>
+
+			<hr class="corta">
+
 			<combinados items=main.productos categoria="Combinados"> </combinados>
 
 			<hr class="corta">
 
-			<combinados items=main.productos categoria="Combinados para chicos"> </combinados>
+			<dos-precios items=main.productos categoria="Sashimis" precio1="6" precio2="10"> </dos-precios>
+
+			<hr class="corta">
+
+			<dos-precios items=main.productos categoria="Geishas" precio1="6" precio2="10"> </dos-precios>
 
 			<hr class="corta">
 
@@ -39,44 +38,39 @@
 
 			<only-desc items=main.productos categoria="Bebidas"> </only-desc>
 
-			<hr class="corta">
-
-			<only-desc items=main.productos categoria="Woks - Almendras"> </only-desc>
-
 			
-
-			
-
-
 		</div>
+
 		<div class="col-sm-6" style="padding-right: 40px">
 			<div class="left-line">
 
-			
 
-			<roll items=main.productos categoria="Rolls" precio1="4" precio2="8"> </roll>
 
-			<hr class="corta">
 
-			<roll items=main.productos categoria="Rolls Calientes" precio1="4" precio2="10"> </roll>
 
-			<hr class="corta">
+				<roll items=main.productos categoria="Rolls Calientes" precio1="4" precio2="10"> </roll>
 
-			<dos-precios items=main.productos categoria="Sashimis" precio1="6" precio2="10"> </dos-precios>
+				<hr class="corta">
 
-			<hr class="corta">
+				<combinados items=main.productos categoria="Combinados para chicos"> </combinados>
 
-			<dos-precios items=main.productos categoria="Niguiris" precio1="4" precio2="6" precio3="10"> </dos-precios>
+				<hr class="corta">
 
-			<hr class="corta">
 
-			<dos-precios items=main.productos categoria="Makis" precio1="6" precio2="10"> </dos-precios>
+				<dos-precios items=main.productos categoria="Niguiris" precio1="4" precio2="6" precio3="10"> </dos-precios>
 
-			<hr class="corta">
+				<hr class="corta">
 
-			<dos-precios items=main.productos categoria="Geishas" precio1="6" precio2="10"> </dos-precios>
+				<dos-precios items=main.productos categoria="Makis" precio1="6" precio2="10"> </dos-precios>
 
-			
+				<hr class="corta">
+
+
+				<only-desc items=main.productos categoria="Woks - Almendras"> </only-desc>
+
+
+
+
 
 
 
@@ -85,23 +79,8 @@
 		</div>
 
 	</div>
-	<br> 
 
-	<hr class="larga">
-
-
-	<h2>{{main.kitchen.title}} </h2>
-	<p class="segundo-titulo">{{main.kitchen.subtitle}} </p>
-	<br>
-
-	<ul class="list-group">
-		<li  ng-repeat="item in main.kitchen.descriptions" > 
-
-			<span class="precio-abajo">{{item.precio | currency}}</span>
-			<p class="descAbajo1"> {{item.producto}}  </p>
-			<p class="descAbajo2">{{item.detalle}}</p> <br>
-		</li>
-	</ul>
+	
 
 
 

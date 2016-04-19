@@ -244,6 +244,7 @@ li a.active
  text-align:right;
 }
 
+
 /*ESTILO DE LAS LINEAS*/
 hr.larga {
   border-top: dashed 2px rgb(174, 255, 178);
@@ -268,23 +269,14 @@ hr.corta{
   border-right: 1px dashed #EEE;
 }
 
+/*LINEAS VERTICALES FOOTER*/
+
 .left-line {
   border-left: 2px dashed rgb(174, 255, 178);
   padding-left: 5%;
 }
-/*LINEAS VERTICALES FOOTER*/
 
 
-
-.desc{
-  float:left;
-  color: white;
-}
-
-.desc2{
-  float: left;
-  color: rgb(174, 255, 178);
-}
 
 .desc3{
   text-align:left;
@@ -293,11 +285,6 @@ hr.corta{
   font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;
 }
 
-.precio
-{
-  text-align:right;
-  color: white;
-}
 
 .precio2
 {
@@ -331,7 +318,7 @@ hr.corta{
   .descripcion{
   text-align:left;  
   color:white;
-  font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
+  font: normal normal normal 17px/1.4em 'Open Sans',sans-serif;
 }
 
 
