@@ -5,7 +5,7 @@ angular.module('app')
 
     $scope.items = [
       {path: '/menu', title: 'Menu'},
-      {path: '/', title: 'SushiSan'},
+      {path: '/', title: 'SushiSan'}
     ];
 
     $scope.isActive = function(item) {
@@ -36,15 +36,13 @@ angular.module('app')
   })
 
 
-.controller("MainController", function(dataService, someCustomPrices){
+.controller("MainController", function(dataService){
 
  var vm = this;
 
  dataService.getData().then(function(data) {
-   vm.ejemplo = data;
-    var productos= vm.ejemplo;
-    productos = someCustomPrices.getSomePrices(productos);
-  console.log(productos);
+   vm.productos = data;
+     
 
   });
 

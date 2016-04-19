@@ -30,13 +30,13 @@ angular.module("app")
     }
 })
 
-.directive('unPrecio', function(){
+.directive('onlyDesc', function(){
     return {
         scope:{
             items: "=",
             categoria: "@"
         },
-        templateUrl: 'templates/unPrecio.html',
+        templateUrl: 'templates/onlyDesc.html',
     }
 })
 
@@ -46,13 +46,22 @@ angular.module("app")
             items: "=",
             categoria: "@",
             precio1:"@",
-            precio2:"@"
+            precio2:"@",
+            precio3:"@"
         },
-        templateUrl: 'templates/dosPrecios.html',
-        link: function (scope, element, attrs) {
-                scope.campo1 = "Precio_" + scope.precio1 ;
-                scope.campo2 = "item.Precio_" + scope.precio2 ;
-            }
+        templateUrl: 'templates/dosPrecios.html'
+    }
+})
+
+.directive('roll', function(){
+    return {
+        scope:{
+            items: "=",
+            categoria: "@",
+            precio1:"@",
+            precio2:"@",
+        },
+        templateUrl: 'templates/roll.html'
     }
 });
 

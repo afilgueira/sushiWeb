@@ -6,7 +6,17 @@
 
 	<hr class="larga">
 
+	<div class="row">
+	<h2> Rolls </h2>
 
+		<div class="col-sm-6">
+		</div>
+
+		<div class="col-sm-6">
+		</div>
+
+	</div>
+		
 
 
 	<div class="row">
@@ -15,19 +25,23 @@
 		<div class="col-sm-6">
 			
 
-			<combinados items=main.ejemplo categoria="Combinados"> </combinados>
+			<combinados items=main.productos categoria="Combinados"> </combinados>
 
 			<hr class="corta">
 
-			<combinados items=main.ejemplo categoria="Combinados para chicos"> </combinados>
+			<combinados items=main.productos categoria="Combinados para chicos"> </combinados>
 
 			<hr class="corta">
 
-			<un-precio items=main.ejemplo categoria="Sashimis"> </un-precio>
+			<only-desc items=main.productos categoria="Salsas"> </only-desc>
 
 			<hr class="corta">
 
-			<un-precio items=main.ejemplo categoria="Bebidas"> </un-precio>
+			<only-desc items=main.productos categoria="Bebidas"> </only-desc>
+
+			<hr class="corta">
+
+			<only-desc items=main.productos categoria="Woks - Almendras"> </only-desc>
 
 			
 
@@ -40,22 +54,32 @@
 
 			
 
-			<dos-precios items=main.ejemplo categoria="Rolls" precio1="4" precio2="8"> </dos-precios>
+			<roll items=main.productos categoria="Rolls" precio1="4" precio2="8"> </roll>
 
 			<hr class="corta">
 
+			<roll items=main.productos categoria="Rolls Calientes" precio1="4" precio2="10"> </roll>
 
-			<h2>Rolls Calientes<span class="titulo-doble">x8</span> <span class="titulo-doble">x4 </span> </h2>
+			<hr class="corta">
 
-			<ul class="list-group">
-				<li  ng-repeat="roll in main.ejemplo | filter: {Tipo: 'Rolls Calientes'} :true " > 
-					<p>
-					<span class="descripcion"> {{roll.Nombre}}  </span>
-					<span class="precio-doble">{{roll.Precio_8 | currency}}</span>
-					<span class="precio-doble">{{roll.Precio_4 | currency}}</span> <br>
-					</p>
-				</li>
-			</ul>
+			<dos-precios items=main.productos categoria="Sashimis" precio1="6" precio2="10"> </dos-precios>
+
+			<hr class="corta">
+
+			<dos-precios items=main.productos categoria="Niguiris" precio1="4" precio2="6" precio3="10"> </dos-precios>
+
+			<hr class="corta">
+
+			<dos-precios items=main.productos categoria="Makis" precio1="6" precio2="10"> </dos-precios>
+
+			<hr class="corta">
+
+			<dos-precios items=main.productos categoria="Geishas" precio1="6" precio2="10"> </dos-precios>
+
+			
+
+
+
 
 			</div>
 		</div>
