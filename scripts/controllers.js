@@ -36,15 +36,25 @@ angular.module('app')
   })
 
 
-.controller("MainController", function(dataService){
+.controller("MainController", function(dataService, $anchorScroll, $location, $scope){
 
  var vm = this;
 
  dataService().then(function(data) {
    vm.productos = data;
-     
-
   });
+
+$scope.scrollTo = function(id) {
+      $location.hash(id);
+      $anchorScroll();
+   }
 
 
 });
+
+
+
+
+
+
+

@@ -6,7 +6,10 @@
 	<hr class="larga">
 
 	<div class="sub-menu">
-
+	<ul>
+	<li> <a ng-click="scrollTo('rolls')" > Rolls</a> </li>
+	<li> <a ng-click="scrollTo('combinados')" > Combinados</a> </li>
+	</ul>
 
 	</div>
 
@@ -15,13 +18,13 @@
 
 
 
-			<roll id= "roll" items=main.productos categoria="Rolls" precio1="4" precio2="8"> </roll>
+			<roll id= "rolls" items=main.productos categoria="Rolls" precio1="4" precio2="8"> </roll>
 
 			<roll items=main.productos categoria="Rolls Calientes" precio1="4" precio2="10"> </roll>
 
 			<hr class="corta">
 
-			<combinados items=main.productos categoria="Combinados"> </combinados>
+			<combinados id="combinados" items=main.productos categoria="Combinados"> </combinados>
 
 			<combinados items=main.productos categoria="Combinados para chicos"> </combinados>
 
