@@ -1,26 +1,31 @@
 angular.module("app") 
 .factory("dataService", function($http) {
-	return {
-		getData: function() {
 
-			
-			var promise = $http({
+	var promise = null;
+
+	return function() {
+
+			if (promise) {
+    
+      return promise; }
+      else{
+			promise = $http({
 
 				method: "GET",
 				url: "https://sheetsu.com/apis/v1.0/e597ba54"
 			})
 			.then(function (response) {
+				console.log(response.data);
 				return (response.data);
 			});
-			return promise;
+			return promise;}
 
-		}
-
-
-	};
+	}
 
 
-});
+	});
+
+
 
 /*
 .factory('customPrices', function () {

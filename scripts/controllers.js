@@ -40,7 +40,7 @@ angular.module('app')
 
  var vm = this;
 
- dataService.getData().then(function(data) {
+ dataService().then(function(data) {
    vm.productos = data;
      
 
