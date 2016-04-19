@@ -3,18 +3,25 @@
 	<div style="margin-bottom: 100px"></div>
 	<h1>MENU</h1>
 
-	<hr class="larga">
+	
 
-	<div class="sub-menu">
-	<ul>
-	<li> <a ng-click="scrollTo('rolls')" > Rolls</a> </li>
-	<li> <a ng-click="scrollTo('combinados')" > Combinados</a> </li>
+	<div style="margin-bottom: 30px" class="sub-menu">
+	<ul class= "nav-menu">
+	<li style="float:left" > <a href ng-click="scrollTo('rolls')" > Rolls</a> </li>
+	<li style="float:left"> <a href ng-click="scrollTo('combinados')" > Combinados</a> </li>
+	<li style="float:left"> <a href ng-click="scrollTo('tradicionales')" > Tradicionales</a> </li>
+	<li style="float:left"> <a href ng-click="scrollTo('woks')" > Woks</a> </li>
+	<li style="float:left"> <a href ng-click="scrollTo('extras')" > Extras</a> </li>
+
+
 	</ul>
 
 	</div>
 
-			<div style ="padding-right:30px">
 
+
+	
+			<div style ="padding-right:30px">
 
 
 
@@ -30,7 +37,7 @@
 
 			<hr class="corta">
 
-			<dos-precios items=main.productos categoria="Sashimis" precio1="6" precio2="10"> </dos-precios>
+			<dos-precios id= "tradicionales" items=main.productos categoria="Sashimis" precio1="6" precio2="10"> </dos-precios>
 			
 
 			<dos-precios items=main.productos categoria="Geishas" precio1="6" precio2="10"> </dos-precios>
@@ -42,9 +49,9 @@
 			<hr class="corta">
 
 		
-			<only-desc items=main.productos categoria="Woks - Almendras"> </only-desc>
+			<only-desc id= "woks" items=main.productos categoria="Woks - Almendras"> </only-desc>
 
-			<only-desc items=main.productos categoria="Salsas"> </only-desc>
+			<only-desc id= "extras" items=main.productos categoria="Salsas"> </only-desc>
 
 			<only-desc items=main.productos categoria="Bebidas"> </only-desc>
 

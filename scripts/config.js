@@ -6,6 +6,10 @@ angular.module("app")
     });
 }])
 
+.run(['$anchorScroll', function($anchorScroll) {
+  $anchorScroll.yOffset = 50;   
+}])
+
 .config(function ($routeProvider) 
   { $routeProvider 
   .when("/menu", 
