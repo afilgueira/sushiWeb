@@ -1,4 +1,10 @@
 
+.margen-50
+{
+  margin-bottom: 50px;
+}
+
+
 #logo-sushisan{
 
   position:absolute;
@@ -21,6 +27,11 @@
   padding-top:5px;
 }
 
+.margen-menu-navbar
+{
+  margin-bottom: 90px;
+}
+
 .header-carousel{
   position:absolute; 
   top: 370px; 
@@ -36,7 +47,7 @@
   visibility: hidden; 
 }
 
-.margen-menu{
+.margen-derecho-menu{
   padding-right:30px;
 }
 

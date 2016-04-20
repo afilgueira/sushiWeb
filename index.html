@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-  <html lang="en-US" ng-app="app">
-  <head>
+<html lang="en-US" ng-app="app">
+<head>
     <!--imagen-->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-    
-
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css");
-    <!--meta-->
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css")>
     <meta name="description" content="Sushi selling">
     <meta name="keywords" content="Sushi,Sushi San,Nagiri,Unagi">
     <meta name="author" content="lucho">
@@ -24,42 +21,28 @@
     <script src="scripts/controllers.js"></script>
     <script src="scripts/directives.js"></script>
     <script src="scripts/services.js"></script>
-    
 
-    <!--CAROUSEL SCRIPT-->
-    <script src="/_catalogs/masterpage/UHN/js/bootstrap.min.js"></script>
-  
+    <title ng-bind="title" > Sushisan </title>
 
-
-
-  <title ng-bind="title" > Sushisan </title> <!-- Para que no inicie vacio cuando se busca en google por ej-->
-
-  </head>
+</head>
 
 <body >
 
+    <div class="nav-back"> </div>
+    <div class="wrapper">
 
-<div class="nav-back"> </div>
+        <div header></div>
+        <div class= "margen-50"></div>
+        <ng-view onload="viewLoaded()"> </ng-view>
 
-<div class="wrapper">
+    </div>
 
-<div header></div>
+    <div class="push"></div>
 
-<div style="margin-bottom: 50px"></div>
-<ng-view onload="viewLoaded()"> </ng-view>
-    
-</div>
+    <div class= "margen-50"></div>
 
-
-<div class="push"></div>
-
-<div style="margin-bottom: 50px"></div>
-
-<!--FOOTER-->
-<div footer> </div>
-
+    <!--FOOTER-->
+    <div footer> </div>
 
 </body>
-
-
 </html>

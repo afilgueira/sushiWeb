@@ -1,22 +1,27 @@
 <div>
 
 
-<h2> {{categoria}} <span class="titulo-doble">x{{precio1}}</span> <span class="titulo-doble">x{{precio2}} </span>  <span ng-if= "precio3" class="titulo-doble">x{{precio3}} </span> </h2>
-			<br>
+	<h2> {{categoria}} 
+		<span ng-if= "precio3" class="titulo-doble">x{{precio3}}</span> 
+		<span class="titulo-doble">x{{precio2}} </span> 
+		<span class="titulo-doble">x{{precio1}} </span> 
+	</h2>
 
-			
-			<ul class="list-group">
-				<li  ng-repeat="item in items | filter: {Tipo: categoria} :true" > 
-					<p>
-					<span class="descripcion"> {{item.Nombre}} </span> 
-					<span ng-if= "item.Precio_4 != '' " class="precio-doble"> {{item.Precio_4 | currency}} </span>
-					<span ng-if= "item.Precio_6 != '' " class="precio-doble"> {{item.Precio_6 | currency}} </span>
-					<span ng-if= "item.Precio_8 != '' " class="precio-doble"> {{item.Precio_8 | currency}} </span>
-					<span ng-if= "item.Precio_9 != '' " class="precio-doble"> {{item.Precio_9 | currency}} </span>
-					<span ng-if= "item.Precio_10 != '' " class="precio-doble"> {{item.Precio_10 | currency}} </span>
+	<br>
 
-					</p>
-				</li>
-			</ul>
-			
+	
+	<ul class="list-group">
+		<li  ng-repeat="item in items | filter: {Tipo: categoria} :true" > 
+			<p>
+				<span class="descripcion"> {{item.Nombre}} </span> 
+				<span ng-if= "item.Precio_10 != '' " class="precio-doble"> {{item.Precio_10 | currency}} </span>
+				<span ng-if= "item.Precio_9 != '' " class="precio-doble"> {{item.Precio_9 | currency}} </span>
+				<span ng-if= "item.Precio_8 != '' " class="precio-doble"> {{item.Precio_8 | currency}} </span>
+				<span ng-if= "item.Precio_6 != '' " class="precio-doble"> {{item.Precio_6 | currency}} </span>
+				<span ng-if= "item.Precio_4 != '' " class="precio-doble"> {{item.Precio_4 | currency}} </span>
+
+			</p>
+		</li>
+	</ul>
+	
 </div>

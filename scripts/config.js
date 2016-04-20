@@ -23,4 +23,4 @@ angular.module("app")
     title: 'SushiSan'
   }) 
 
-}) ;
+});
