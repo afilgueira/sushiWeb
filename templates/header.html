@@ -1,7 +1,9 @@
 <nav> 
 	<ul ng-controller="NavCtrl" class="navbar"> 
+		
 		<li class="nav-gral" ng-repeat="item in items" > 
-			<a ng-class="{active: isActive(item)}" href="#{{item.path}}">{{item.title}}</a>
+			<a ng-class="{active: isActive(item)}" href="#{{item.path}}"> <span class="font-nav"> {{item.title}} </span> </a>
 		</li> 
+		
 	</ul> 
 </nav>

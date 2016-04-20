@@ -15,12 +15,12 @@ angular.module("app")
   .when("/menu", 
     { templateUrl: "/menu.html", 
     controller: "MainController as main" ,
-    title: 'Sushi | Menu'
+    title: 'SushiSan | Menu'
   }) 
   .when("/", 
     { templateUrl: "/sushisan.html", 
     controller: "CarouselCtrl" ,
-    title: 'Sushi'
+    title: 'SushiSan'
   }) 
 
 }) ;

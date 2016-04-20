@@ -14,6 +14,13 @@
   width: 150px ;
 } 
 
+#logo-menu
+{
+  float:right; 
+  padding-right:30px; 
+  padding-top:5px;
+}
+
 .header-carousel{
   position:absolute; 
   top: 370px; 
@@ -25,24 +32,12 @@
   background: rgba(85, 85, 85, 0.85);
 
 }
-.carousel-indicators li{
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  margin: 10px;
-  text-indent: 0;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  background-color: #ffffff;
-  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,1);  
+.carousel-indicators {
+  visibility: hidden; 
 }
 
-.carousel-indicators .active {
-  width: 48px;
-  height: 48px;
-  margin: 10px;
-  background-color: #123242;
+.margen-menu{
+  padding-right:30px;
 }
 
 
@@ -121,20 +116,38 @@ div.hr hr {
 
 
 /*NAV BAR*/
+div.nav-back
+{
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  height: 55px;
+}
 
 ul.navbar {
 
-  height:10px
+  z-index: 30;
+  height:55px;
   list-style-type: none;
-  margin: 0;
+  margin: 10px 0px;
   padding: 0;
   overflow: hidden;
   background-color: #333;
   top: 0;
   width: 100%; 
+  display: inline-block;
   /* position: fixed -> tiene pocas páginas y no vale la pena perder pantalla para algo que probablemente no se use (pasar de menu a Sushi San)*/
   
 }
+
+.font-nav{
+
+ font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+ font-size: 18px;
+}
+
+/*NAV BAR*/
 
 ul.nav-menu {
 
@@ -154,7 +167,7 @@ li{
 }
 
 li.nav-gral {
-  float: left;
+  float:right;
 }
 
 body { 
@@ -190,12 +203,14 @@ li a {
 li a:hover {
   background-color: #111;
   color: rgb(174, 255, 178);
+  text-decoration: none;
 }
 
 
 li a.active
 {
   color: rgb(114, 195, 118) ;
+  text-decoration: none;
 }
 
 
@@ -231,7 +246,7 @@ li a.active
   bottom:0px; 
   right:60px; 
   color: rgb(0,0,0);
-  z-index=15; 
+  z-index:15; 
   background: rgba(0,0,0,0);
   border-color: rgba(0,0,0,0);
   font-weight:bold;

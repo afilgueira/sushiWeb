@@ -5,6 +5,7 @@
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     
 
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css");
@@ -31,18 +32,20 @@
 
 
 
-  <title ng-bind="title"> </title>
+  <title ng-bind="title" > Sushisan </title> <!-- Para que no inicie vacio cuando se busca en google por ej-->
 
   </head>
 
 <body >
 
 
+<div class="nav-back"> </div>
+
+<div class="wrapper">
+
 <div header></div>
 
 <div style="margin-bottom: 50px"></div>
-
-<div class="wrapper">
 <ng-view onload="viewLoaded()"> </ng-view>
     
 </div>
