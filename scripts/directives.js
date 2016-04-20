@@ -63,7 +63,15 @@ angular.module("app")
         },
         templateUrl: 'templates/roll.html'
     }
+})
+
+.directive('column', function () { 
+    return {
+    templateUrl: '/templates/column.html',  
+    transclude : true
+    };
 });
+
 
 
 

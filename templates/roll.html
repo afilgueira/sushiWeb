@@ -1,7 +1,7 @@
 <div>
 
 <h2> {{categoria}} 
-<span class="titulo-doble">x{{precio2}}</span> 
+<span ng-class=" precio2 > 9 ? 'titulo-extra' : 'titulo-doble' ">x{{precio2}}</span> 
 <span class="titulo-doble">x{{precio1}} </span> 
 </h2> 
 
@@ -11,8 +11,8 @@
 				<li  ng-repeat="item in items| filter: {Tipo: categoria} :true" > 
 					<span  class="descripcion"> {{item.Nombre}} </span> 
 					<span  class="ingredientes"> - {{item.Ingredientes}} </span>
-					<span class="precio-doble">{{item.Precio_8 | currency}}</span> 
-					<span class="precio-doble">{{item.Precio_4 | currency}}</span> 
+					<span ng-class=" item.Precio_8 > 100 ? 'precio-extra' : 'precio-doble' ">{{item.Precio_8 | currency}}</span> 
+					<span ng-class=" item.Precio_4 > 100 ? 'precio-extra' : 'precio-doble' ">{{item.Precio_4 | currency}}</span> 
 					
 				</li>
 			</ul>

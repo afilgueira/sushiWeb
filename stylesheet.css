@@ -366,12 +366,22 @@ hr.corta{
 .precio-doble{
   float:right;  
   color:white;
-  padding-left: 10px;}
+  padding-left: 17px;}
 
-.titulo-doble{
+.precio-extra{
   float:right;  
   color:white;
-  padding-left: 30px;}
+  padding-left: 12px;}
+
+.titulo-extra{
+  float:right;  
+  color:white;
+  padding-left: 32px;}
+
+  .titulo-doble{
+  float:right;  
+  color:white;
+  padding-left: 39px;}
 
   .descripcion{
   text-align:left;  
@@ -381,7 +391,11 @@ hr.corta{
 
 
 
-
+.nocol-margin
+{
+  margin-right: 13px;
+  margin-left: 13px;
+}
 
 
 .descAbajo2{
@@ -399,4 +413,29 @@ hr.corta{
   padding-right:3%; 
   color:white}
 
+/*
+.inside {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
+  background: -moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+  background: -ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+}*/
+.content {
+  padding: 12px ;
+}
 
+/* columns of same height styles */
+
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+.col-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
