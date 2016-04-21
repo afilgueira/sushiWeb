@@ -4,6 +4,16 @@
   margin-bottom: 50px;
 }
 
+.margen-30
+{
+  margin-bottom: 30px;
+}
+
+.margen-25
+{
+  margin-bottom: 25px;
+}
+
 
 #logo-sushisan{
 
@@ -84,6 +94,7 @@ p.segundo-titulo{
 
 h1 {
   font: normal normal normal 70px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
+  margin-left: 10px !important;
 }
 
 h2{
@@ -160,17 +171,61 @@ ul.navbar {
 
 /*NAV BAR*/
 
+.sub-menu{
+
+
+
+}
+
 ul.nav-menu {
 
-  height:10px
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-right:15px;
+  padding-left: 0;
   overflow: hidden;
-  background-color: #666;
+  background: none;
   top: 0;
-  width: 430.5px; 
- 
+  z-index: 150;
+  width: 950px;   
+  }
+
+li.nav-item a {
+  
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float:right;
+}
+
+li.nav-desc a {
+  
+  font-size: 24px !important;
+  font-weight: bold !important;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 100px ;
+  padding-left: 10px !important;
+  text-decoration: none;
+  float:left;
+}
+
+
+.main-nav-scrolled {
+  border: none !important;
+  background-color: #333 !important;
+  position: fixed;
+  width: 100%;
+}
+
+#contenido.sticky-active
+{
+  margin-top: 110px;
 }
 
 li{
@@ -203,7 +258,7 @@ li a:visited{
  
 
 
-li a {
+li.nav-gral a {
   display: block;
   color: white;
   text-align: center;
@@ -211,11 +266,18 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+li.nav-gral a:hover {
   background-color: #111;
   color: rgb(174, 255, 178);
   text-decoration: none;
 }
+
+li.nav-item a:hover {
+  background-color: #111;
+  color: rgb(174, 255, 178);
+  text-decoration: none;
+}
+
 
 
 li a.active
@@ -311,6 +373,8 @@ hr.larga {
 
 hr.corta{
   border-top: dashed 2px rgb(174, 255, 178);
+  margin-right: 10px;
+  margin-left: 10px;
 }
 /*ESTILO DE LAS LINEAS*/
 

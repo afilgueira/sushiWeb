@@ -7,10 +7,10 @@ angular.module("app")
 }])
 
 .run(['$anchorScroll', function($anchorScroll) {
-  $anchorScroll.yOffset = 50;   
+  $anchorScroll.yOffset = 40;   
 }])
 
-.config(function ($routeProvider) 
+.config(function ($routeProvider, $locationProvider) 
   { $routeProvider 
   .when("/menu", 
     { templateUrl: "/menu.html", 
@@ -21,6 +21,7 @@ angular.module("app")
     { templateUrl: "/sushisan.html", 
     controller: "CarouselCtrl" ,
     title: 'SushiSan'
-  }) 
+  });
+
 
 });

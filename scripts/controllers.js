@@ -46,6 +46,29 @@ angular.module('app')
 		$anchorScroll();
 	}
 
+	/*$(".nav-menu").hide();*/
+
+	var  mn = $(".nav-menu");
+	var  contenido = $("#contenido");
+
+    mns = "main-nav-scrolled";
+    hdr = 343;
+
+	$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+  	/*mn.show();*/
+    mn.addClass(mns);
+    contenido.addClass('sticky-active');
+    $(".nav-desc").hide();
+
+      } else {
+  	/*mn.hide();*/
+    mn.removeClass(mns);
+    contenido.removeClass('sticky-active');
+    $(".nav-desc").show();
+
+  }
+	})
 
 });
 
