@@ -81,7 +81,7 @@ angular.module("app")
         scope: {
             'anchorSmoothScroll': '@'
         },
-
+                    /*STRACT TO SERVICE*/
         link: function($scope, $element, $attrs) {
 
             initialize();

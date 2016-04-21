@@ -34,7 +34,7 @@
 {
   float:right; 
   padding-right:30px; 
-  padding-top:5px;
+  padding-top:10px;
 }
 
 .margen-menu-navbar
@@ -111,8 +111,16 @@ h1 ,h2,h3{
 .wrapperTransparency{
   padding: 1% 0 1% 3%;
   background: rgba(85, 85, 85, 0.85);
+  z-index: 1000;
 }
 /*TRANSPARENCIA DEL WRAPPER*/
+.topMenuTransparency{
+  position: absolute;
+  background: rgba(10, 10, 10, 0.85);
+  height:270px;
+  width: 1000px;
+  z-index: -1;
+}
 
 
 /*TRANSPARENCIA DEL CONTENT*/
@@ -182,14 +190,14 @@ ul.nav-menu {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
   list-style-type: none;
-  margin: 0;
-  padding-right:15px;
-  padding-left: 0;
+  margin-left: -30px;
+  padding-right:30px;
+  padding-left: 40px;
   overflow: hidden;
-  background: none;
+  background-color: rgba(50, 50, 50, 0.75);
   top: 0;
   z-index: 150;
-  width: 950px;   
+  width: 1000px;   
   }
 
 li.nav-item a {
@@ -201,6 +209,18 @@ li.nav-item a {
   text-decoration: none;
   float:right;
 }
+
+hr.top-menu
+{
+
+  position: absolute;
+  top:378px ;
+  border-top: solid 2px rgb(174, 255, 178);
+  width: 1000px;
+  margin-left: -30px;
+}
+
+
 
 li.nav-desc a {
   
@@ -218,7 +238,7 @@ li.nav-desc a {
 
 .main-nav-scrolled {
   border: none !important;
-  background-color: #333 !important;
+  background-color: rgb(40,40,40) !important;
   position: fixed;
   width: 100%;
 }
