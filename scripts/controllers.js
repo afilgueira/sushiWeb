@@ -15,8 +15,9 @@ angular.module('app')
 	};
 }])
 
-.controller('CarouselCtrl', function($scope,dataService) 
-{	
+.controller('CarouselCtrl', function($scope, dataService) 
+{
+
 	dataService();
 	$scope.viewLoaded=function()
 	{
@@ -30,12 +31,16 @@ angular.module('app')
 })
 
 
-.controller("MainController", function(products, $anchorScroll, $location, $scope)
+.controller("MainController", function(dataService, $anchorScroll, $location, $scope)
 {
 
 	var vm = this;
 
-	vm.productos= products;
+	dataService().then(function(data) 
+	{	
+		$scope.dataLoaded= true;
+		vm.productos = data;
+	});
 
 	$scope.scrollTo = function(id) 
 	{
@@ -43,7 +48,6 @@ angular.module('app')
 		$anchorScroll();
 	}
 
-	/*$(".nav-menu").hide();*/
 
 	var  mn = $(".nav-menu");
 	var  contenido = $("#contenido");
@@ -53,13 +57,13 @@ angular.module('app')
 
 	$(window).scroll(function() {
   if( $(this).scrollTop() > hdr ) {
-  	/*mn.show();*/
+
     mn.addClass(mns);
     contenido.addClass('sticky-active');
     $(".nav-desc").hide();
 
       } else {
-  	/*mn.hide();*/
+  	
     mn.removeClass(mns);
     contenido.removeClass('sticky-active');
     $(".nav-desc").show();
