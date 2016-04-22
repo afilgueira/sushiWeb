@@ -15,30 +15,27 @@ angular.module('app')
 	};
 }])
 
-.controller('CarouselCtrl', ['$scope', function($scope) 
-{
-
+.controller('CarouselCtrl', function($scope,dataService) 
+{	
+	dataService();
 	$scope.viewLoaded=function()
 	{
 		$('.carousel ').carousel()
 	}
 
-}])
+})
 
 .controller('homeController', function() {
 
 })
 
 
-.controller("MainController", function(dataService, $anchorScroll, $location, $scope)
+.controller("MainController", function(products, $anchorScroll, $location, $scope)
 {
 
 	var vm = this;
 
-	dataService().then(function(data) 
-	{
-		vm.productos = data;
-	});
+	vm.productos= products;
 
 	$scope.scrollTo = function(id) 
 	{

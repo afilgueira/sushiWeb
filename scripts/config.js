@@ -15,7 +15,12 @@ angular.module("app")
   .when("/menu", 
     { templateUrl: "/menu.html", 
     controller: "MainController as main" ,
-    title: 'SushiSan | Menu'
+    title: 'SushiSan | Menu',
+    resolve: {
+      products: function(dataService){
+        return dataService();
+      }
+    }
   }) 
   .when("/", 
     { templateUrl: "/sushisan.html", 
