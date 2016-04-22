@@ -65,6 +65,15 @@ angular.module("app")
     }
 })
 
+.directive('loader', function(){
+    
+        return {
+    templateUrl: '/templates/loader.html'
+    };
+
+}
+)
+
 .directive('column', function () { 
     return {
     templateUrl: '/templates/column.html',  

@@ -75,12 +75,13 @@
 		<div class="row-height">
 			<column>
 			<dos-precios id= "tradicionales" items=main.productos categoria="Sashimis" precio1="6" precio2="10"> </dos-precios>
-
+			<loader ng-hide="dataLoaded"> </loader>
 			<dos-precios items=main.productos categoria="Makis" precio1="6" precio2="10"> </dos-precios>
 			</column>
 
 			<column>
 			<dos-precios items=main.productos categoria="Geishas" precio1="6" precio2="10"> </dos-precios>
+			<loader ng-hide="dataLoaded"> </loader>
 			<dos-precios items=main.productos categoria="Niguiris" precio1="4" precio2="6" precio3="10"> </dos-precios>
 			</column>
 		</div>
@@ -91,10 +92,12 @@
 	
 		<div class="nocol-margin">
 				<only-desc id= "woks" items=main.productos categoria="Woks - Almendras"> </only-desc>
-
+				<loader ng-hide="dataLoaded"> </loader>
 				<only-desc id= "extras" items=main.productos categoria="Salsas"> </only-desc>
-
+				<loader ng-hide="dataLoaded"> </loader>
 				<only-desc items=main.productos categoria="Bebidas"> </only-desc>
+				<loader ng-hide="dataLoaded"> </loader>
+
 		</div>
 	
 	</div>
