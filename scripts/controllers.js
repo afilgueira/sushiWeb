@@ -38,8 +38,12 @@ angular.module('app')
 
 	dataService().then(function(data) 
 	{	
+
 		$scope.dataLoaded= true;
 		vm.productos = data;
+		
+
+
 	});
 
 	$scope.scrollTo = function(id) 

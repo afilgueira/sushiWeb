@@ -11,7 +11,7 @@
 
 	
 	<ul class="list-group">
-		<li  ng-repeat="item in items | filter: {Tipo: categoria} :true" > 
+		<li  ng-repeat="item in items  | filter: {Tipo: categoria} :true " > 
 			<p>
 				<span class="descripcion"> {{item.Nombre}} </span> 
 				<span ng-if= "item.Precio_10 != '' " ng-class=" item.Precio_10 > 100 ? 'precio-extra' : 'precio-doble' "> {{item.Precio_10 | currency}} </span>

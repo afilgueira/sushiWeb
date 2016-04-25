@@ -87,6 +87,10 @@
 
 }
 
+.bold{
+  font-weight: bold;
+}
+
 p.segundo-titulo{
  font: normal normal normal 17px 'Open Sans',sans-serif ;
  color: white;
@@ -126,7 +130,9 @@ h1 ,h2,h3{
 /*TRANSPARENCIA DEL CONTENT*/
 .footerTransparency{
   background:rgba(25,25,25,0.4);
-  padding: 30px 0 30px 30px;
+  padding: 30px 0 30px 20px;
+  height: 200px;
+  margin-bottom: 50px;
 }
 /*TRANSPARENCIA DEL CONTENT*/
 
@@ -317,7 +323,7 @@ li a.active
 .wrapper {
 	min-height: 100% !important;
 	height: 100%;
-	margin: -10px auto -4em auto !important;
+	margin: -10px auto 0 auto !important;
 	width: 1000px;
 }
 
@@ -330,6 +336,19 @@ li a.active
   z-index:15; 
   background: rgba(0,0,0,0);
   border-color: rgba(0,0,0,0);
+}
+
+.btn-xs.btn-default.btn:focus{
+  border:none;
+  outline:none;
+  background: none;
+}
+
+.btn-xs.btn-default.btn:active {
+   border:none;
+  outline:none;
+  background: none;
+
 }
 /*PLAY AND STOP CAROUSEL*/
 
@@ -350,17 +369,24 @@ li a.active
 /*NUMERO DE SLIDE*/
 
 
+.underline{
+  text-decoration: underline;
+}
 
-
-.footer, .push {
+.push {
+  height: 50px;
+}
+.footer {
 
   position:relative;
   bottom:0;
-  height: 4em;
+  height: 100px;
   color: white;
   width: 1000px;
   text-align:left;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 30px auto;
+  -webkit-backface-visibility: hidden;  /*BAJA EL EFECTO DEL PIXELEO DEL FOOTER CUANDO EL CAROUSEL CAMBIA DE IMAGEN*/
+  -webkit-transform: translateZ(0) scale(1.0, 1.0); /*BAJA EL EFECTO DEL PIXELEO DEL FOOTER CUANDO EL CAROUSEL CAMBIA DE IMAGEN*/
 }
 
 .centrar-footer{
@@ -497,15 +523,6 @@ hr.corta{
   padding-right:3%; 
   color:white}
 
-/*
-.inside {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background: #ededed;
-  background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
-  background: -moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
-  background: -ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
-}*/
 .content {
   padding: 12px ;
 }

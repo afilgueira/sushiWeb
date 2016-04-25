@@ -11,20 +11,18 @@
 	<div class="margen-25"> </div>
 
 	<div class="sub-menu">
-	<ul class= "nav-menu">
-	<li class= "nav-desc" > <a>Nuestros productos </a></li>
-		
-					
-	<li class= " nav-item "> <a anchor-smooth-scroll="extras" href> Extras</a> </li>
-	<li class= "nav-item"> <a anchor-smooth-scroll="woks" href > Woks</a> </li>
-	<li class= "nav-item"> <a anchor-smooth-scroll="tradicionales" href > Tradicionales</a> </li>
-	<li class= "nav-item"> <a anchor-smooth-scroll="combinados" href> Combinados</a> </li>
-	<li class=  "nav-item">  <a anchor-smooth-scroll="rolls" href> Rolls</a> </li>
-	
-	
-	
+		<ul class= "nav-menu">
+			<li class= "nav-desc" > <a>Nuestros productos </a></li>
 
-	</ul>
+
+			<li class= " nav-item "> <a anchor-smooth-scroll="extras" href> Extras</a> </li>
+			<li class= "nav-item"> <a anchor-smooth-scroll="woks" href > Woks</a> </li>
+			<li class= "nav-item"> <a anchor-smooth-scroll="tradicionales" href > Tradicionales</a> </li>
+			<li class= "nav-item"> <a anchor-smooth-scroll="combinados" href> Combinados</a> </li>
+			<li class=  "nav-item">  <a anchor-smooth-scroll="rolls" href> Rolls</a> </li>
+
+
+		</ul>
 
 	</div>
 	
@@ -32,21 +30,21 @@
 	
 
 	<div class="margen-derecho-menu">
-	<div class="margen-30"> </div>
+		<div class="margen-30"> </div>
 
-	<div id="contenido">
+		<div id="contenido">
 
-	<hr class="top-menu">
+			<hr class="top-menu">
 
-	<div class="row">
-		<div class="row-height">
-			<column>
-			<roll id= "rolls" items=main.productos categoria="Rolls" precio1="4" precio2="8"> </roll>
+			<div class="row">
+				<div class="row-height">
+					<column>
+					<roll id= "rolls" items=main.productos categoria="Rolls" precio1="4" precio2="8"> </roll>
 
-			</column>
+				</column>
 
-			<column>
-			<roll items=main.productos categoria="Rolls Calientes" precio1="4" precio2="8"> </roll>
+				<column>
+				<roll items=main.productos categoria="Rolls Calientes" precio1="4" precio2="8"> </roll>
 
 
 			</column>
@@ -59,49 +57,62 @@
 		<div class="row-height">
 			<column>
 			<combinados id="combinados" items=main.productos categoria="Combinados"> </combinados>
-			</column>
+		</column>
 
-			<column>
-			<combinados items=main.productos categoria="Combinados para chicos"> </combinados>
-			</column>
-		</div>
-	</div>
+		<column>
+		<combinados items=main.productos categoria="Combinados para chicos"> </combinados>
+	</column>
+</div>
+</div>
 
-	<hr class="corta">
+<hr class="corta">
 
-	
 
-	<div class="row">
-		<div class="row-height">
-			<column>
-			<dos-precios id= "tradicionales" items=main.productos categoria="Sashimis" precio1="6" precio2="10"> </dos-precios>
-			<loader ng-hide="dataLoaded"> </loader>
-			<dos-precios items=main.productos categoria="Makis" precio1="6" precio2="10"> </dos-precios>
-			</column>
 
-			<column>
-			<dos-precios items=main.productos categoria="Geishas" precio1="6" precio2="10"> </dos-precios>
-			<loader ng-hide="dataLoaded"> </loader>
-			<dos-precios items=main.productos categoria="Niguiris" precio1="4" precio2="6" precio3="10"> </dos-precios>
-			</column>
-		</div>
-	</div>
+<div class="row">
+	<div class="row-height">
+		<column>
+		<dos-precios id= "tradicionales" items=main.productos categoria="Sashimis" precio1="6" precio2="10"> </dos-precios>
+		</column>
 
-	<hr class="corta">
+		<column>	
+		<dos-precios items=main.productos categoria="Makis" precio1="6" precio2="10"> </dos-precios>
+	</column>
 
-	
-		<div class="nocol-margin">
-				<only-desc id= "woks" items=main.productos categoria="Woks - Almendras"> </only-desc>
-				<loader ng-hide="dataLoaded"> </loader>
-				<only-desc id= "extras" items=main.productos categoria="Salsas"> </only-desc>
-				<loader ng-hide="dataLoaded"> </loader>
-				<only-desc items=main.productos categoria="Bebidas"> </only-desc>
-				<loader ng-hide="dataLoaded"> </loader>
+	<column>
+	<dos-precios items=main.productos categoria="Geishas" precio1="6" precio2="10"> </dos-precios>
+</column>
+<column>	
+	<dos-precios items=main.productos categoria="Niguiris" precio1="4" precio2="6" precio3="10"> </dos-precios>
+</column>
+</div>
+</div>
 
-		</div>
-	
-	</div>
-	</div>
+<hr class="corta">
+
+
+<div class="nocol-margin">
+	<only-desc id= "woks" items=main.productos categoria="Woks - Almendras"> </only-desc>
+	<loader ng-hide="dataLoaded"> </loader>
+</div>
+
+<hr class="corta">
+
+<div class="row">
+	<div class="row-height">
+		<column>
+	<only-desc id= "extras" items=main.productos categoria="Salsas"> </only-desc>
+	</column>
+
+	<column>
+	<only-desc items=main.productos categoria="Bebidas"> </only-desc>
+</column>
+</div>
+</div>
+
+
+</div>
+</div>
 
 </div>
 
