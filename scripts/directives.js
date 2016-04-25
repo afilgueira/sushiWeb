@@ -59,7 +59,7 @@ angular.module("app")
             items: "=",
             categoria: "@",
             precio1:"@",
-            precio2:"@",
+            precio2:"@"
         },
         templateUrl: 'templates/roll.html'
     }
@@ -68,16 +68,27 @@ angular.module("app")
 .directive('loader', function(){
     
         return {
-    templateUrl: '/templates/loader.html'
+    templateUrl: '/templates/loader.html',
+    scope:true
     };
 
-}
-)
+})
+
+
+.directive('twoColLoader', function(){
+    
+        return {
+    templateUrl: '/templates/twoColLoader.html',
+    scope:true
+    };
+
+})
 
 .directive('column', function () { 
     return {
     templateUrl: '/templates/column.html',  
-    transclude : true
+    transclude : true,
+    scope: false
     };
 })
 

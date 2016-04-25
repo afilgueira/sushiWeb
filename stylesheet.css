@@ -61,6 +61,9 @@
   padding-right:30px;
 }
 
+.margin-bottom-title{
+  margin-bottom: 80px;
+}
 
 .carousel-description-container {
   position:absolute; 
@@ -101,9 +104,18 @@ h1 {
   margin-left: 10px !important;
 }
 
+.section-title
+{
+  padding-left: 13px;
+  margin-bottom: 0px;
+  text-align: left;
+  font: normal normal normal 30px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
+}
+
 h2{
   font: normal normal normal 25px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
 }
+
 
 h1 ,h2,h3{
   color: white !important; 
@@ -155,7 +167,7 @@ div.hr hr {
 div.nav-back
 {
   width: 100%;
-  background-color: #333;
+  background-color: rgb(57,57,57);
   position: absolute;
   top: 0;
   height: 55px;
@@ -169,7 +181,7 @@ ul.navbar {
   margin: 10px 0px;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(57,57,57);
   top: 0;
   width: 100%; 
   display: inline-block;
@@ -211,16 +223,16 @@ li.nav-item a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 12px;
   text-decoration: none;
-  float:right;
+  float:left;
 }
 
 hr.top-menu
 {
 
   position: absolute;
-  top:378px ;
+  top:376px ;
   border-top: solid 2px rgb(174, 255, 178);
   width: 1000px;
   margin-left: -30px;
@@ -313,7 +325,15 @@ li a.active
 }
 
 
+.fb-logo{
 
+height: 25px;
+width:25px;
+margin-top: 12px;
+float:right;
+margin-left: 10px;
+margin-right: 5px;
+}
 
 
 
@@ -417,11 +437,19 @@ hr.larga {
   margin: 0 3% 0 0;
 }
 
-hr.corta{
+hr.corta-2{
   border-top: dashed 2px rgb(174, 255, 178);
+  margin-right: 250px;
+  margin-left: 0px;
+}
+
+
+hr.corta{
+  border-top: dotted 2px rgb(174, 255, 178);
   margin-right: 10px;
   margin-left: 10px;
 }
+
 /*ESTILO DE LAS LINEAS*/
 
 
@@ -476,12 +504,12 @@ hr.corta{
 .precio-doble{
   float:right;  
   color:white;
-  padding-left: 17px;}
+  padding-left: 20px;}
 
 .precio-extra{
   float:right;  
   color:white;
-  padding-left: 12px;}
+  padding-left: 11px;}
 
 .titulo-extra{
   float:right;  
@@ -491,7 +519,7 @@ hr.corta{
   .titulo-doble{
   float:right;  
   color:white;
-  padding-left: 39px;}
+  padding-left: 44px;}
 
   .descripcion{
   text-align:left;  

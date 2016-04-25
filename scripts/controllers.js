@@ -41,17 +41,8 @@ angular.module('app')
 
 		$scope.dataLoaded= true;
 		vm.productos = data;
-		
-
 
 	});
-
-	$scope.scrollTo = function(id) 
-	{
-		$location.hash(id);
-		$anchorScroll();
-	}
-
 
 	var  mn = $(".nav-menu");
 	var  contenido = $("#contenido");
@@ -59,20 +50,24 @@ angular.module('app')
     mns = "main-nav-scrolled";
     hdr = 343;
 
-	$(window).scroll(function() {
-  if( $(this).scrollTop() > hdr ) {
+	$(window).scroll(function() 
+	{
+	if($(this).scrollTop() > hdr) 
+	  	{
+	    mn.addClass(mns);
+	    contenido.addClass('sticky-active');
+	    $(".nav-desc").hide();
+	    } 
 
-    mn.addClass(mns);
-    contenido.addClass('sticky-active');
-    $(".nav-desc").hide();
+	else 
 
-      } else {
-  	
-    mn.removeClass(mns);
-    contenido.removeClass('sticky-active');
-    $(".nav-desc").show();
+	    {
+	  	
+	    mn.removeClass(mns);
+	    contenido.removeClass('sticky-active');
+	    $(".nav-desc").show();
 
-  }
+	    }
 	})
 
 });
