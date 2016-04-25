@@ -1,6 +1,12 @@
 <nav> 
 	<ul ng-controller="NavCtrl" class="navbar"> 
 		
+		<div style="float:left">
+		<a  href="https://www.facebook.com/sushisan.argentina">
+		<img src="imgs/fb.png" style="height: 40px; width:40px; margin-top: 7px;">
+		</a>
+		</div>
+
 		<li class="nav-gral" ng-repeat="item in items" > 
 			<a ng-class="{active: isActive(item)}" href="#{{item.path}}">
 			 <span class="font-nav"> {{item.title}} </span> 
