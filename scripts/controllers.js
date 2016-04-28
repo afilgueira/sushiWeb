@@ -47,8 +47,10 @@ angular.module('app')
 	var  mn = $(".nav-menu");
 	var  contenido = $("#contenido");
 
+
+
     mns = "main-nav-scrolled";
-    hdr = 343;
+    hdr = mn.offset().top ;
 
 	$(window).scroll(function() 
 	{

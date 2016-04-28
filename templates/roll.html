@@ -16,10 +16,12 @@
 
 					<ul class="list-group">
 						<li  ng-repeat="item in items | filter: {Tipo: categoria} :true" ng-if="$even" > 
-						<span  class="descripcion"> {{item.Nombre}} </span> 
-							<span  class="ingredientes"> - {{item.Ingredientes}} </span>
+							<span  class="codigo"> {{item.Codigo}} -</span>  <span  class="descripcion"> {{item.Nombre}} </span> 
 							<span ng-class=" item.Precio_8 > 100 ? 'precio-extra' : 'precio-doble' ">{{item.Precio_8 | currency}}</span> 
-							<span ng-class=" item.Precio_4 > 100 ? 'precio-extra' : 'precio-doble' ">{{item.Precio_4 | currency}}</span> 		
+							<span ng-class=" item.Precio_4 > 100 ? 'precio-extra' : 'precio-doble' ">{{item.Precio_4 | currency}}</span> 	
+							<br>
+							<span  class="ingredientes"> {{item.Ingredientes}} </span>
+							<div class="margen-15"> </div>
 						</li>
 					</ul>
 
@@ -40,10 +42,13 @@
 
 					<ul class="list-group">
 						<li  ng-repeat="item in items | filter: {Tipo: categoria} :true " ng-if="$odd" > 
-							<span  class="descripcion"> {{item.Nombre}} </span> 
-							<span  class="ingredientes"> - {{item.Ingredientes}} </span>
+							<span  class="codigo"> {{item.Codigo}} -  </span> <span  class="descripcion"> {{item.Nombre}} </span> 
 							<span ng-class=" item.Precio_8 > 100 ? 'precio-extra' : 'precio-doble' ">{{item.Precio_8 | currency}}</span> 
-							<span ng-class=" item.Precio_4 > 100 ? 'precio-extra' : 'precio-doble' ">{{item.Precio_4 | currency}}</span> 		
+							<span ng-class=" item.Precio_4 > 100 ? 'precio-extra' : 'precio-doble' ">{{item.Precio_4 | currency}}</span> 
+							
+							<br>
+							<span  class="ingredientes"> {{item.Ingredientes}} </span>
+									
 						</li>
 					</ul>					
 				</div>

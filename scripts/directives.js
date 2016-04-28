@@ -30,6 +30,16 @@ angular.module("app")
     }
 })
 
+.directive('descripcionYDetalle', function(){
+    return {
+        scope:{
+            items: "=",
+            categoria: "@"
+        },
+        templateUrl: 'templates/descripcionYDetalle.html',
+    }
+})
+
 .directive('onlyDesc', function(){
     return {
         scope:{

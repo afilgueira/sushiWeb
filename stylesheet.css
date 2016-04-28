@@ -14,6 +14,10 @@
   margin-bottom: 25px;
 }
 
+.margen-15
+{
+  margin-bottom: 15px;
+}
 
 #logo-sushisan{
 
@@ -170,7 +174,7 @@ div.nav-back
   background-color: rgb(57,57,57);
   position: absolute;
   top: 0;
-  height: 55px;
+  min-height: 55px;
 }
 
 ul.navbar {
@@ -523,8 +527,26 @@ hr.corta{
 
   .descripcion{
   text-align:left;  
-  color:white;
+  color: rgb(134, 215, 138);
   font: normal normal normal 17px/1.4em 'Open Sans',sans-serif;
+}
+
+  .tradicionales{
+  text-align:left;  
+  color: white;
+  font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
+}
+
+.ingredientes{
+  text-align:left;  
+  color:white;
+  margin-left: -5px;
+}
+
+.codigo{
+  text-align:left;  
+  color: white;
+  font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
 }
 
 

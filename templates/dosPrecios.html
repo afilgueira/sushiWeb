@@ -13,7 +13,7 @@
 	<ul class="list-group">
 		<li  ng-repeat="item in items  | filter: {Tipo: categoria} :true " > 
 			<p>
-				<span class="descripcion"> {{item.Nombre}} </span> 
+				<span  class="codigo"> {{item.Codigo}} -</span> <span class="tradicionales"> {{item.Nombre}} </span> 
 				<span ng-if= "item.Precio_10 != '' " ng-class=" item.Precio_10 > 100 ? 'precio-extra' : 'precio-doble' "> {{item.Precio_10 | currency}} </span>
 				<span ng-if= "item.Precio_9 != '' " ng-class=" item.Precio_9 > 100 ? 'precio-extra' : 'precio-doble' "> {{item.Precio_9 | currency}} </span>
 				<span ng-if= "item.Precio_8 != '' " ng-class=" item.Precio_8 > 100 ? 'precio-extra' : 'precio-doble' "> {{item.Precio_8 | currency}} </span>
