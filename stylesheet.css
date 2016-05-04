@@ -1,5 +1,5 @@
 
-html {
+html{
 	height: 100%;
 }
 body{ 
@@ -9,9 +9,6 @@ body{
   -moz-background-size: cover ;
   -o-background-size: cover ;
   background-size: cover ;
-  overflow-x: hidden;
-
-
  }
 
 
@@ -379,6 +376,7 @@ margin-right: 5px;
 .push {
   height: 50px;
 }
+
 .footer {
 
   position:relative;
