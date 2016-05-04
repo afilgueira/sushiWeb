@@ -58,7 +58,6 @@ angular.module('app')
 	  	{
 	    mn.addClass(mns);
 	    contenido.addClass('sticky-active');
-	    $(".nav-desc").hide();
 	    } 
 
 	else 
@@ -67,8 +66,6 @@ angular.module('app')
 	  	
 	    mn.removeClass(mns);
 	    contenido.removeClass('sticky-active');
-	    $(".nav-desc").show();
-
 	    }
 	})
 

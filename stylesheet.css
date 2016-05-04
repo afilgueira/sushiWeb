@@ -1,4 +1,20 @@
 
+html {
+	height: 100%;
+}
+body{ 
+ 
+  background: url(imgs/backgroundimg.jpg) no-repeat center center fixed ;
+  -webkit-background-size: cover ;
+  -moz-background-size: cover ;
+  -o-background-size: cover ;
+  background-size: cover ;
+  overflow-x: hidden;
+
+
+ }
+
+
 .margen-50
 {
   margin-bottom: 50px;
@@ -161,19 +177,6 @@ h1 ,h2,h3{
 
 
 
-
-div.hr {
-  width: 100%;
-  background: #fff  no-repeat scroll center;
-
-}
-
-div.hr hr {
-  display: none;
-
-}
-
-
 /*NAV BAR*/
 div.nav-back
 {
@@ -279,23 +282,7 @@ li.nav-gral {
   float:right;
 }
 
-html { 
-  background: url(imgs/backgroundimg.jpg) no-repeat  fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-body { 
-  height: 100%;
-  width: 100%;
-  background: url(imgs/backgroundimg.jpg) no-repeat  fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 .nav-menu a
  {
@@ -305,10 +292,6 @@ body {
 li a:visited{
   color: white;
 }
-
-
-
- 
 
 
 li.nav-gral a {
@@ -387,21 +370,6 @@ margin-right: 5px;
 }
 /*PLAY AND STOP CAROUSEL*/
 
-/*NUMERO DE SLIDE*/
-.numero-slide{
-  position:absolute ; 
-  bottom:0px; 
-  right:60px; 
-  color: rgb(0,0,0);
-  z-index:15; 
-  background: rgba(0,0,0,0);
-  border-color: rgba(0,0,0,0);
-  font-weight:bold;
-}
-
-
-
-/*NUMERO DE SLIDE*/
 
 
 .underline{
@@ -452,26 +420,11 @@ hr.larga {
   margin: 0 3% 0 0;
 }
 
-hr.corta-2{
-  border-top: dashed 2px rgb(174, 255, 178);
-  margin-right: 250px;
-  margin-left: 0px;
-}
-
 
 hr.corta{
   border-top: dotted 2px rgb(174, 255, 178);
   margin-right: 10px;
   margin-left: 10px;
-}
-
-/*ESTILO DE LAS LINEAS*/
-
-
-.derecha
-{
- float:right;
- padding-right:10%;
 }
 
 
@@ -480,29 +433,7 @@ hr.corta{
   border-right: 1px dashed #EEE;
 }
 
-/*LINEAS VERTICALES FOOTER*/
 
-.left-line {
-  border-left: 2px dashed rgb(174, 255, 178);
-  padding-left: 5%;
-}
-
-
-
-.desc3{
-  text-align:left;
-  padding-right:20%;
-  color: white;
-  font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;
-}
-
-
-.precio2
-{
-  padding-right:6%;
-  text-align:right;
-  color: white;
-}
 
 .incluye{
   color:white;
@@ -520,11 +451,13 @@ hr.corta{
 }
 
 .precio-doble{
+  font-size: 14px;
   float:right;  
   color:white;
   padding-left: 23px;}
 
 .precio-extra{
+  font-size: 14px;
   float:right;  
   color:white;
   padding-left: 15px;}
@@ -563,8 +496,8 @@ hr.corta{
   text-align:left;  
   color: white;
   font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
+  max-width: 70%;
 }
-
 
 
 .codigo{
@@ -583,22 +516,6 @@ hr.corta{
   margin-bottom: 45px;
 }
 
-
-
-.descAbajo2{
-  font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;
-  text-align:left;
-  color: white;
-}
-
-.descAbajo1{
-  text-align:left;
-  color: rgb(174, 255, 178);
-}
-.precio-abajo{
-  float:right; 
-  padding-right:3%; 
-  color:white}
 
 .content {
   padding: 12px ;
