@@ -199,13 +199,7 @@ ul.navbar {
  font-size: 18px;
 }
 
-/*NAV BAR*/
 
-.sub-menu{
-
-
-
-}
 
 ul.nav-menu {
 
@@ -345,10 +339,10 @@ margin-right: 5px;
 /*NAV BAR*/
 
 .wrapper {
-	min-height: 100% !important;
-	height: 100%;
-	margin: -10px auto 0 auto !important;
-	width: 1000px;
+  min-height: 100% !important;
+  height: 100%;
+  margin: -10px auto 0 auto !important;
+  width: 1000px;
 }
 
 /*PLAY AND STOP CAROUSEL*/
@@ -496,6 +490,7 @@ hr.corta{
 .incluye{
   color:white;
   font: normal normal normal 12px/1.4em 'Open Sans',sans-serif;
+  width:350px;
 }
 
 .ingredientes{
