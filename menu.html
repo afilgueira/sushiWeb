@@ -16,10 +16,10 @@
 
 			<li class=  "nav-item">  <a anchor-smooth-scroll="rolls" href> Rolls</a> </li>
 			<li class= "nav-item"> <a anchor-smooth-scroll="combinados" href> Combinados</a> </li>
-			<li class= "nav-item"> <a anchor-smooth-scroll="entradas" href > Entradas</a> </li>
 			<li class= "nav-item"> <a anchor-smooth-scroll="tradicionales" href > Tradicionales</a> </li>
-			<li class= "nav-item"> <a anchor-smooth-scroll="woks" href > Woks</a> </li>
 			<li class= " nav-item "> <a anchor-smooth-scroll="temakis" href> Temakis</a> </li>
+			<li class= "nav-item"> <a anchor-smooth-scroll="entradas" href > Entradas</a> </li>
+			<li class= "nav-item"> <a anchor-smooth-scroll="woks" href > Woks</a> </li>
 			<li class= " nav-item "> <a anchor-smooth-scroll="yakimeshis" href> Yakimeshis</a> </li>
 			<li class= "nav-item"> <a anchor-smooth-scroll="salsas" href > Salsas</a> </li>
 			<li class= " nav-item "> <a anchor-smooth-scroll="bebidas" href> Bebidas</a> </li>
@@ -79,13 +79,20 @@
 				</column>
 
 				<column>
-				<dos-precios items=main.productos categoria="Makis" precio1="6" precio2="10"> </dos-precios>
+				<dos-precios items=main.productos categoria="Makis" precio1="6" precio2="9"> </dos-precios>
 				</column>
 
 				<column>	
-				<dos-precios items=main.productos categoria="Geishas" precio1="6" precio2="10"> </dos-precios>
+				<dos-precios items=main.productos categoria="Geishas" precio1="4" precio2="6"> </dos-precios>
 				</column>
 			</div>
+		</div>
+
+		<hr class="corta">
+
+		<div class="nocol-margin">
+			<only-desc id= "temakis" items=main.productos categoria="Temakis x 2"> </only-desc>
+			<loader> </loader>
 		</div>
 
 		<hr class="corta">
@@ -96,25 +103,21 @@
 		</div>
 	
 		<hr class="corta">
+		<div class="row">
+			<div class="row-height">
+				<column>
+		
+			<only-desc id= "woks" items=main.productos categoria="Woks - Almendras"> </only-desc>
+			</column>
 
-		<div class="nocol-margin">
-			<descripcion-y-detalle id= "woks" items=main.productos categoria="Woks - Almendras"> </descripcion-y-detalle>
-			<loader> </loader>
+			<column>
+			<only-desc id= "yakimeshis" items=main.productos categoria="Yakimeshi - Huevo"> </only-desc>
+			</column>
+		</div>
 		</div>
 
-		<hr class="corta">
+		
 
-		<div class="nocol-margin">
-			<descripcion-y-detalle id= "temakis" items=main.productos categoria="Temakis x 2"> </descripcion-y-detalle>
-			<loader> </loader>
-		</div>
-
-		<hr class="corta">
-
-		<div class="nocol-margin">
-			<descripcion-y-detalle id= "yakimeshis" items=main.productos categoria="Yakimeshi - Huevo"> </descripcion-y-detalle>
-			<loader> </loader>
-		</div>
 		<hr class="corta">
 
 	
@@ -123,7 +126,7 @@
 		<div class="row">
 			<div class="row-height">
 				<column>
-				<descripcion-y-detalle id= "salsas" items=main.productos categoria="Salsas"> </descripcion-y-detalle >
+				<only-desc id= "salsas" items=main.productos categoria="Salsas"> </only-desc >
 				</column>
 
 				<column>

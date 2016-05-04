@@ -12,7 +12,9 @@
 
 					<ul class="list-group">
 						<li  ng-repeat="item in items | filter: {Tipo: categoria} :true" ng-if="$even" > 
-						<span  class="codigo"> {{item.Codigo}} - </span><span  class="descripcion"> {{item.Nombre}} </span> 
+						<span  class="codigo"> {{item.Codigo}} - </span>
+						<span  class="descripcion"> {{item.Nombre}} </span> 
+						<span ng-if="item.Cantidad != '' " class="incluye"> (x{{item.Cantidad}}) </span>  
 						<span class="precio-doble">{{item.Precio_Item | currency}}</span> 
 						<p  class="incluye"> {{item.Incluye}} </p> 
 
@@ -32,7 +34,9 @@
 
 					<ul class="list-group">
 						<li  ng-repeat="item in items | filter: {Tipo: categoria} :true " ng-if="$odd" > 
-							<span  class="codigo"> {{item.Codigo}} -</span> <span  class="descripcion"> {{item.Nombre}} </span> 
+							<span  class="codigo"> {{item.Codigo}} -</span> 
+							<span  class="descripcion"> {{item.Nombre}} </span> 
+							<span ng-if="item.Cantidad != '' " class="incluye"> (x{{item.Cantidad}}) </span>  
 							<span class="precio-doble">{{item.Precio_Item | currency}}</span> 
 							<p  class="incluye"> {{item.Incluye}} </p> 
 			

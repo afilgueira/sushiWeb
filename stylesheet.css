@@ -116,6 +116,13 @@ h1 {
   font: normal normal normal 30px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
 }
 
+.section-title-nomarg
+{
+  margin-bottom: 0px;
+  text-align: left;
+  font: normal normal normal 30px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
+}
+
 h2{
   font: normal normal normal 25px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
 }
@@ -145,7 +152,7 @@ h1 ,h2,h3{
 
 /*TRANSPARENCIA DEL CONTENT*/
 .footerTransparency{
-  background:rgba(25,25,25,0.4);
+  background:rgba(25,25,25,0.8);
   padding: 30px 0 30px 20px;
   height: 200px;
   margin-bottom: 50px;
@@ -272,7 +279,17 @@ li.nav-gral {
   float:right;
 }
 
+html { 
+  background: url(imgs/backgroundimg.jpg) no-repeat  fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body { 
+  height: 100%;
+  width: 100%;
   background: url(imgs/backgroundimg.jpg) no-repeat  fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -495,20 +512,22 @@ hr.corta{
 
 .ingredientes{
 
-  padding-left:5px;  
+  text-align: left;
   color:white;
   font: normal normal normal 12px/1.4em 'Open Sans',sans-serif;
+  width: 300px;
+
 }
 
 .precio-doble{
   float:right;  
   color:white;
-  padding-left: 20px;}
+  padding-left: 23px;}
 
 .precio-extra{
   float:right;  
   color:white;
-  padding-left: 11px;}
+  padding-left: 15px;}
 
 .titulo-extra{
   float:right;  
@@ -526,17 +545,27 @@ hr.corta{
   font: normal normal normal 17px/1.4em 'Open Sans',sans-serif;
 }
 
-  .tradicionales{
+  .tradicionales-2{
+  text-align:left;  
+  color: white;
+  font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
+  width: 300px;
+}
+
+ .tradicionales-3{
+  text-align:left;  
+  color: white;
+  font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
+  width: 235px;
+}
+
+  .solo-descripcion{
   text-align:left;  
   color: white;
   font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
 }
 
-.ingredientes{
-  text-align:left;  
-  color:white;
-  margin-left: -5px;
-}
+
 
 .codigo{
   text-align:left;  
@@ -550,7 +579,10 @@ hr.corta{
 {
   margin-right: 13px;
   margin-left: 13px;
+  margin-top: 50px;
+  margin-bottom: 45px;
 }
+
 
 
 .descAbajo2{
