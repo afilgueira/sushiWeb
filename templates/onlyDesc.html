@@ -11,8 +11,12 @@
 <ul class="list-group">
 				<li  ng-repeat="item in items | filter: {Tipo: categoria} :true " >  
 					<p>
-					<span  class="codigo"> {{item.Codigo}} -</span> <span  class="solo-descripcion"> {{item.Nombre}} </span> 
-					<span class="precio-doble">{{item.Precio_Item | currency}}</span> 
+						<span class="precio-doble">{{item.Precio_Item | currency}}</span> 
+					<p class="solo-descripcion"> 
+						<span  class="codigo"> {{item.Codigo}} -</span>  
+						{{item.Nombre}} 
+					</p> 
+					
 					</p>
 				</li>
 			</ul>

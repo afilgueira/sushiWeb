@@ -4,6 +4,7 @@ html{
 }
 body{ 
  
+  min-height: 100%;
   background: url(imgs/backgroundimg.jpg) no-repeat center center fixed ;
   -webkit-background-size: cover ;
   -moz-background-size: cover ;
@@ -16,6 +17,13 @@ body{
 {
   margin-bottom: 50px;
 }
+
+
+.margen-80
+{
+  margin-bottom: 80px;
+}
+
 
 .margen-30
 {
@@ -373,9 +381,6 @@ margin-right: 5px;
   text-decoration: underline;
 }
 
-.push {
-  height: 50px;
-}
 
 .footer {
 
@@ -494,7 +499,7 @@ hr.corta{
   text-align:left;  
   color: white;
   font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
-  max-width: 70%;
+  max-width:80%;
 }
 
 
