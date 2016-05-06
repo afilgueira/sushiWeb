@@ -23,5 +23,8 @@ angular.module("app")
     title: 'SushiSan'
   });
 
+})
 
-});
+.config(['$compileProvider', function ($compileProvider) {
+  $compileProvider.debugInfoEnabled(false);
+}]);
