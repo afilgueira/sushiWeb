@@ -1,24 +1,20 @@
 <div>
-
-<h2> 
-	<span class="section-title-nomarg"> 
-	{{categoria}}
-	</span>
- </h2>
-
-<br>
-
-<ul class="list-group">
-				<li  ng-repeat="item in items | filter: {Tipo: categoria} :true " >  
-					<p>
-						<span class="precio-doble">{{item.Precio_Item | currency}}</span> 
-					<p class="solo-descripcion"> 
-						<span  class="codigo"> {{item.Codigo}} -</span>  
-						{{item.Nombre}} 
-					</p> 
-					
-					</p>
-				</li>
-			</ul>
-
+	<h2>
+		<span class="section-title-nomarg">
+			{{categoria}}
+		</span>
+	</h2>
+	<br>
+	<ul class="list-group">
+		<li ng-repeat="item in items | filter: {Tipo: categoria} :true " >
+			<p>
+				<span class="precio-doble">
+					{{item.Precio_Item | currency}}
+				</span>
+				<p class="solo-descripcion">
+					<span class="codigo"> {{item.Codigo}} -</span> {{item.Nombre}}
+				</p>
+			</p>
+		</li>
+	</ul>
 </div>

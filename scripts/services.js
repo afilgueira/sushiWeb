@@ -1,25 +1,21 @@
-angular.module("app") 
-.factory("dataService", function($http) 
+angular.module("app")
+.factory("dataService", function($http)
 {
 	var promise = null;
 
-	return function() 
+	return function()
 	{
-
-		if (promise) 
-		{
-			return promise; 
+		if (promise) {
+			return promise;
 		}
-
-		else
-		{
+		else{
 			promise = $http
 			({
 
 				method: "GET",
 				url: "https://sheetsu.com/apis/v1.0/e597ba54"
 			})
-			.then(function (response) 
+			.then(function (response)
 			{
 				return (response.data);
 			});
