@@ -1,85 +1,78 @@
-
 html{
-	height: 100%;
+  height: 100%;
 }
-body{ 
- 
+
+body{
   min-height: 100%;
   background: url(imgs/backgroundimg.jpg) no-repeat center center fixed ;
   -webkit-background-size: cover ;
   -moz-background-size: cover ;
   -o-background-size: cover ;
   background-size: cover ;
- }
+}
 
-
-.margen-50
-{
+.margen-50{
   margin-bottom: 50px;
 }
 
 
-.margen-80
-{
+.margen-80{
   margin-bottom: 80px;
 }
 
 
-.margen-30
-{
+.margen-30{
   margin-bottom: 30px;
 }
 
-.margen-25
-{
+.margen-25{
   margin-bottom: 25px;
 }
 
-.margen-15
-{
+.margen-15{
   margin-bottom: 15px;
 }
 
 #logo-sushisan{
-
   position:absolute;
-  top:-60px; 
+  top:-60px;
   left:-60px
-
 }
-#my-indicators {
 
+#my-indicators {
   position:absolute ;
   top:30px;
   left:775px ;
   width: 150px ;
-} 
+}
 
-#logo-menu
-{
-  float:right; 
-  padding-right:30px; 
+#logo-menu{
+  float:right;
+  padding-right:30px;
   padding-top:10px;
 }
 
-.margen-menu-navbar
-{
+.margen-menu-navbar{
   margin-bottom: 90px;
 }
 
 .header-carousel{
-  position:absolute; 
-  top: 370px; 
+  position:absolute;
+  top: 370px;
   right:0;
-  font: normal normal normal 50px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ; 
-  text-align:right; 
-  padding:10px 20px 10px 100px; 
+  font: normal normal normal 50px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ;
+  text-align:right;
+  padding:10px 20px 10px 100px;
   color:white;
   background: rgba(85, 85, 85, 0.85);
-
 }
+
+.hidden{
+  visibility: hidden;
+}
+
 .carousel-indicators {
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 .margen-derecho-menu{
@@ -91,28 +84,22 @@ body{
 }
 
 .carousel-description-container {
-  position:absolute; 
-  bottom: -10px; 
-  width: 100%; 
+  position:absolute;
+  bottom: -10px;
+  width: 100%;
   height: 100px;
   background-color: rgba(150, 150, 150, 0.90);
-
 }
-
 
 .carousel-title {
   padding-left: 20px;
-  font: normal normal normal 20px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ; 
-
-
+  font: normal normal normal 20px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif ;
 }
 
 .carousel-description {
   padding-left: 20px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
-
-
 }
 
 .bold{
@@ -124,21 +111,19 @@ p.segundo-titulo{
  color: white;
 }
 
-h1 {
+h1{
   font: normal normal normal 70px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
   margin-left: 10px !important;
 }
 
-.section-title
-{
+.section-title{
   padding-left: 13px;
   margin-bottom: 0px;
   text-align: left;
   font: normal normal normal 30px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
 }
 
-.section-title-nomarg
-{
+.section-title-nomarg{
   margin-bottom: 0px;
   text-align: left;
   font: normal normal normal 30px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
@@ -149,19 +134,16 @@ h2{
 }
 
 
-h1 ,h2,h3{
-  color: white !important; 
+h1,h2,h3{
+  color: white !important;
 }
 
-
-
-/*TRANSPARENCIA DEL WRAPPER*/
 .wrapperTransparency{
   padding: 1% 0 1% 3%;
   background: rgba(85, 85, 85, 0.85);
   z-index: 1000;
 }
-/*TRANSPARENCIA DEL WRAPPER*/
+
 .topMenuTransparency{
   position: absolute;
   background: rgba(10, 10, 10, 0.85);
@@ -170,21 +152,14 @@ h1 ,h2,h3{
   z-index: -1;
 }
 
-
-/*TRANSPARENCIA DEL CONTENT*/
 .footerTransparency{
   background:rgba(25,25,25,0.8);
   padding: 30px 0 30px 20px;
   height: 200px;
   margin-bottom: 50px;
 }
-/*TRANSPARENCIA DEL CONTENT*/
 
-
-
-/*NAV BAR*/
-div.nav-back
-{
+div.nav-back{
   width: 100%;
   background-color: rgb(57,57,57);
   position: absolute;
@@ -192,8 +167,7 @@ div.nav-back
   min-height: 55px;
 }
 
-ul.navbar {
-
+ul.navbar{
   z-index: 30;
   height:55px;
   list-style-type: none;
@@ -202,22 +176,16 @@ ul.navbar {
   overflow: hidden;
   background-color: rgb(57,57,57);
   top: 0;
-  width: 100%; 
+  width: 100%;
   display: inline-block;
-  /* position: fixed -> tiene pocas páginas y no vale la pena perder pantalla para algo que probablemente no se use (pasar de menu a Sushi San)*/
-  
 }
 
 .font-nav{
-
  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
  font-size: 18px;
 }
 
-
-
-ul.nav-menu {
-
+ul.nav-menu{
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
   list-style-type: none;
@@ -228,11 +196,10 @@ ul.nav-menu {
   background-color: rgba(50, 50, 50, 0.75);
   top: 0;
   z-index: 150;
-  width: 1000px;   
-  }
+  width: 1000px;
+}
 
-li.nav-item a {
-  
+li.nav-item a{
   display: block;
   color: white;
   text-align: center;
@@ -241,9 +208,7 @@ li.nav-item a {
   float:left;
 }
 
-hr.top-menu
-{
-
+hr.top-menu{
   position: absolute;
   top:376px ;
   border-top: solid 2px rgb(174, 255, 178);
@@ -251,10 +216,7 @@ hr.top-menu
   margin-left: -30px;
 }
 
-
-
-li.nav-desc a {
-  
+li.nav-desc a{
   font-size: 24px !important;
   font-weight: bold !important;
   display: block;
@@ -266,40 +228,35 @@ li.nav-desc a {
   float:left;
 }
 
-
-.main-nav-scrolled {
+.main-nav-scrolled{
   border: none !important;
   background-color: rgb(40,40,40) !important;
   position: fixed;
   width: 100%;
 }
 
-#contenido.sticky-active
-{
+#contenido.sticky-active{
   margin-top: 110px;
 }
 
 li{
-   list-style-type: none;
+  list-style-type: none;
 }
 
-li.nav-gral {
+li.nav-gral{
   float:right;
 }
 
-
-
-.nav-menu a
- {
+.nav-menu a{
   text-decoration: none !important;
- }
+}
 
 li a:visited{
   color: white;
 }
 
 
-li.nav-gral a {
+li.nav-gral a{
   display: block;
   color: white;
   text-align: center;
@@ -307,29 +264,25 @@ li.nav-gral a {
   text-decoration: none;
 }
 
-li.nav-gral a:hover {
+li.nav-gral a:hover{
   background-color: #111;
   color: rgb(174, 255, 178);
   text-decoration: none;
 }
 
-li.nav-item a:hover {
+li.nav-item a:hover{
   background-color: #111;
   color: rgb(174, 255, 178);
   text-decoration: none;
 }
 
-
-
-li a.active
-{
+li a.active{
   color: rgb(114, 195, 118) ;
   text-decoration: none;
 }
 
 
 .fb-logo{
-
 height: 25px;
 width:25px;
 margin-top: 12px;
@@ -338,11 +291,6 @@ margin-left: 10px;
 margin-right: 5px;
 }
 
-
-
-
-/*NAV BAR*/
-
 .wrapper {
   min-height: 100% !important;
   height: 100%;
@@ -350,13 +298,12 @@ margin-right: 5px;
   width: 1000px;
 }
 
-/*PLAY AND STOP CAROUSEL*/
 .btn-xs.btn-default.btn{
-  position:absolute ; 
-  bottom:0px; 
-  right:80px; 
+  position:absolute ;
+  bottom:0px;
+  right:80px;
   color: rgb(0,0,0);
-  z-index:15; 
+  z-index:15;
   background: rgba(0,0,0,0);
   border-color: rgba(0,0,0,0);
 }
@@ -371,19 +318,13 @@ margin-right: 5px;
    border:none;
   outline:none;
   background: none;
-
 }
-/*PLAY AND STOP CAROUSEL*/
-
-
 
 .underline{
   text-decoration: underline;
 }
 
-
 .footer {
-
   position:relative;
   bottom:0;
   height: 100px;
@@ -400,9 +341,7 @@ margin-right: 5px;
   width: 800px;
 }
 
-
-/* FLECHAS DEL CAROUSEL SIN FONDO GRADIENTE*/
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left, .carousel-control.right{
   position:absolute;
   top:50%;
   background-image: none !important;
@@ -410,19 +349,15 @@ margin-right: 5px;
 }
 
 .carousel-caption{
-
  margin:0 auto;
- margin-top: 200px; 
+ margin-top: 200px;
  text-align:right;
 }
 
-
-/*ESTILO DE LAS LINEAS*/
-hr.larga {
+hr.larga{
   border-top: dashed 2px rgb(174, 255, 178);
   margin: 0 3% 0 0;
 }
-
 
 hr.corta{
   border-top: dotted 2px rgb(174, 255, 178);
@@ -430,13 +365,9 @@ hr.corta{
   margin-left: 10px;
 }
 
-
-/*LINEAS VERTICALES FOOTER*/
-.right-line {
+.right-line{
   border-right: 1px dashed #EEE;
 }
-
-
 
 .incluye{
   color:white;
@@ -445,86 +376,81 @@ hr.corta{
 }
 
 .ingredientes{
-
   text-align: left;
   color:white;
   font: normal normal normal 12px/1.4em 'Open Sans',sans-serif;
   width: 300px;
-
 }
 
 .precio-doble{
   font-size: 14px;
-  float:right;  
+  float:right;
   color:white;
-  padding-left: 23px;}
+  padding-left: 23px;
+}
 
 .precio-extra{
   font-size: 14px;
-  float:right;  
+  float:right;
   color:white;
-  padding-left: 15px;}
+  padding-left: 15px;
+}
 
 .titulo-extra{
-  float:right;  
+  float:right;
   color:white;
-  padding-left: 32px;}
+  padding-left: 32px;
+}
 
-  .titulo-doble{
-  float:right;  
+.titulo-doble{
+  float:right;
   color:white;
-  padding-left: 44px;}
+  padding-left: 44px;
+}
 
-  .descripcion{
-  text-align:left;  
+.descripcion{
+  text-align:left;
   color: rgb(134, 215, 138);
   font: normal normal normal 17px/1.4em 'Open Sans',sans-serif;
 }
 
-  .tradicionales-2{
-  text-align:left;  
+.tradicionales-2{
+  text-align:left;
   color: white;
   font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
   width: 300px;
 }
 
- .tradicionales-3{
-  text-align:left;  
+.tradicionales-3{
+  text-align:left;
   color: white;
   font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
   width: 235px;
 }
 
-  .solo-descripcion{
-  text-align:left;  
+.solo-descripcion{
+  text-align:left;
   color: white;
   font: normal normal normal 15px/1.4em 'Open Sans',sans-serif;
   max-width:80%;
 }
 
-
 .codigo{
-  text-align:left;  
+  text-align:left;
   color: white;
   font: normal normal normal 14px/1.4em 'Open Sans',sans-serif;
 }
 
-
-
-.nocol-margin
-{
+.nocol-margin{
   margin-right: 13px;
   margin-left: 13px;
   margin-top: 50px;
   margin-bottom: 45px;
 }
 
-
-.content {
+.content{
   padding: 12px ;
 }
-
-/* columns of same height styles */
 
 .row-height {
   display: table;
@@ -532,6 +458,7 @@ hr.corta{
   height: 100%;
   width: 100%;
 }
+
 .col-height {
   display: table-cell;
   float: none;

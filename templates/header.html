@@ -1,17 +1,12 @@
-<nav> 
-	<ul ng-controller="NavCtrl" class="navbar"> 
-
+<nav>
+	<ul ng-controller="NavCtrl" class="navbar">
 		<a  target="_blank" href="https://www.facebook.com/sushisan.argentina">
-		<img src="imgs/facebook-icon.jpg" class="fb-logo">
+			<img src="imgs/facebook-icon.jpg" class="fb-logo">
 		</a>
-
-		<li class="nav-gral" ng-repeat="item in items" > 
+		<li class="nav-gral" ng-repeat="item in items" >
 			<a ng-class="{active: isActive(item)}" href="#{{item.path}}">
-			 <span class="font-nav"> {{item.title}} </span> 
+			 	<span class="font-nav"> {{item.title}} </span>
 			</a>
-		</li> 
-
-		
-		
-	</ul> 
+		</li>
+	</ul>
 </nav>

@@ -1,50 +1,36 @@
 <div>
 	<div>
-	<h2> <span class="section-title"> {{categoria}}</span></h2>
+		<h2><span class="section-title"> {{categoria}}</span></h2>
 	</div>
-
 	<br>
 	<div class="row">
 		<div class="row-height">
 			<div class="col-xs-6 col-sm-6 col-sm-height">
-				
 				<div class="content">
-
 					<ul class="list-group">
-						<li  ng-repeat="item in items | filter: {Tipo: categoria} :true" ng-if="$even" > 
+						<li  ng-repeat="item in items | filter: {Tipo: categoria} :true" ng-if="$even" >
 						<span  class="codigo"> {{item.Codigo}} - </span>
-						<span  class="descripcion"> {{item.Nombre}} </span> 
-						<span ng-if="item.Cantidad != '' " class="incluye"> (x{{item.Cantidad}}) </span>  
-						<span class="precio-doble">{{item.Precio_Item | currency}}</span> 
-						<p  class="incluye"> {{item.Incluye}} </p> 
-
-
+						<span  class="descripcion"> {{item.Nombre}} </span>
+						<span ng-if="item.Cantidad != '' " class="incluye"> (x{{item.Cantidad}}) </span>
+						<span class="precio-doble">{{item.Precio_Item | currency}}</span>
+						<p  class="incluye"> {{item.Incluye}} </p>
 						</li>
 					</ul>
-
 				</div>
-			</div>		
-
-
+			</div>
 			<div class="col-xs-6 col-sm-6 col-sm-height">
-				
 				<div class="content">
-
-				
-
 					<ul class="list-group">
-						<li  ng-repeat="item in items | filter: {Tipo: categoria} :true " ng-if="$odd" > 
-							<span  class="codigo"> {{item.Codigo}} -</span> 
-							<span  class="descripcion"> {{item.Nombre}} </span> 
-							<span ng-if="item.Cantidad != '' " class="incluye"> (x{{item.Cantidad}}) </span>  
-							<span class="precio-doble">{{item.Precio_Item | currency}}</span> 
-							<p  class="incluye"> {{item.Incluye}} </p> 
-			
+						<li ng-repeat="item in items | filter: {Tipo: categoria} :true " ng-if="$odd" >
+							<span  class="codigo"> {{item.Codigo}} -</span>
+							<span  class="descripcion"> {{item.Nombre}} </span>
+							<span ng-if="item.Cantidad != '' " class="incluye"> (x{{item.Cantidad}}) </span>
+							<span class="precio-doble">{{item.Precio_Item | currency}}</span>
+							<p class="incluye"> {{item.Incluye}} </p>
 						</li>
-					</ul>					
+					</ul>
 				</div>
-			</div>	
-
+			</div>
 		</div>
 	</div>
 </div>
